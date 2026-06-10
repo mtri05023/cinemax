@@ -1,0 +1,63 @@
+/* Layout Grid cho phần dưới */
+.dashboard-grid-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Cột trái gấp đôi cột phải */
+  gap: 24px;
+}
+
+/* Style cho Top Movies */
+.top-movie-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.top-movie-item:last-child {
+  border-bottom: none;
+}
+
+.tm-poster {
+  width: 50px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.tm-info h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.tm-stats {
+  font-size: 12px;
+  color: #aaa;
+}
+.tm-highlight {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 1024px) {
+  .dashboard-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Badge trạng thái nhỏ gọn */
+.status-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.dot-Paid {
+  background-color: #46d369;
+} /* Xanh lá */
+.dot-Pending {
+  background-color: #ffa500;
+} /* Cam */
+.dot-Cancelled {
+  background-color: #e50914;
+} /* Đỏ */

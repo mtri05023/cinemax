@@ -1,0 +1,126 @@
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CARD */
+.order-card {
+  background: linear-gradient(145deg, #1f1f2e, #25253a);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #2f2f45;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  border-color: #e50914;
+  box-shadow: 0 10px 30px rgba(229, 9, 20, 0.2);
+}
+
+/* HEADER */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.order-id {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.order-date {
+  font-size: 13px;
+  color: #888;
+}
+
+/* STATUS */
+.order-status {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-paid {
+  background: rgba(70, 211, 105, 0.15);
+  color: #46d369;
+}
+
+.status-pending {
+  background: rgba(255, 165, 0, 0.15);
+  color: orange;
+}
+
+.status-cancelled {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+/* BODY */
+.order-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.order-total {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e50914;
+}
+
+/* FOOTER */
+.order-footer {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.btn-detail {
+  font-size: 13px;
+  color: #e50914;
+  text-decoration: none;
+  border: 1px solid #e50914;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.btn-detail:hover {
+  background: #e50914;
+  color: #fff;
+}
+.order-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+}
+
+.status-paid.order-card::before {
+  background: #46d369;
+}
+
+.status-pending.order-card::before {
+  background: orange;
+}
+
+.status-cancelled.order-card::before {
+  background: #ef4444;
+}

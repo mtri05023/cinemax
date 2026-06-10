@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test API - Cinemax</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 20px;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+        border-bottom: 3px solid #667eea;
+        padding-bottom: 10px;
+      }
+
+      .subtitle {
+        color: #666;
+        margin-bottom: 30px;
+      }
+
+      .section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        border-left: 4px solid #667eea;
+      }
+
+      .section h2 {
+        color: #667eea;
+        margin-bottom: 15px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+        font-weight: 600;
+      }
+
+      select,
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+
+      select:focus,
+      input:focus {
+        outline: none;
+        border-color: #667eea;
+      }
+
+      .btn {
+        background: #667eea;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+
+      .btn:hover {
+        background: #5568d3;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+      }
+
+      .btn-danger {
+        background: #e74c3c;
+      }
+
+      .btn-danger:hover {
+        background: #c0392b;
+      }
+
+      .result {
+        margin-top: 20px;
+        padding: 15px;
+        background: #2d3748;
+        color: #68d391;
+        border-radius: 5px;
+        font-family: "Courier New", monospace;
+        font-size: 13px;
+        max-height: 500px;
+        overflow-y: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+
+      .result.error {
+        background: #742a2a;
+        color: #fc8181;
+      }
+
+      .result.success {
+        background: #22543d;
+        color: #68d391;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .post-data {
+        margin-top: 10px;
+      }
+
+      .post-data input {
+        margin-bottom: 10px;
+      }
+
+      .info {
+        background: #e3f2fd;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border-left: 4px solid #2196f3;
+      }
+
+      .info p {
+        margin: 5px 0;
+        color: #1976d2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🧪 Test API - Cinemax</h1>
+      <p class="subtitle">
+        Test các API cho Phòng chiếu, Trạng thái phòng, và Loại ghế
+      </p>
+
+      <div class="info">
+        <p><strong>📌 Hướng dẫn:</strong></p>
+        <p>1. Chọn Controller và Action</p>
+        <p>2. Điền thông tin cần thiết (nếu có)</p>
+        <p>3. Nhấn nút "Test API" để xem kết quả</p>
+        <p>4. Kết quả sẽ hiển thị dưới dạng JSON</p>
+      </div>
+
+      <div class="section">
+        <h2>1. Phòng chiếu (Halls)</h2>
+
+        <div class="form-group">
+          <label>Action:</label>
+          <select id="hallAction" title="Select an action for Hall" onchange="toggleHallFields()">
+            <option value="getAll">getAll - Lấy danh sách</option>
+            <option value="getById">getById - Lấy theo ID</option>
+            <option value="getStatuses">getStatuses - Lấy trạng thái</option>
+            <option value="getCinemas">getCinemas - Lấy danh sách rạp</option>
+            <option value="create">create - Tạo mới</option>
+            <option value="update">update - Cập nhật</option>
+            <option value="delete">delete - Xóa</option>
+          </select>
+        </div>
+
+        <div id="hallGetById" class="hidden">
+          <div class="form-group">
+            <label>Hall ID:</label>
+            <input type="number" id="hallId" placeholder="Nhập ID" />
+          </div>
+        </div>
+
+        <div id="hallGetAll" class="hidden">
+          <div class="form-group">
+            <label>Cinema ID (tùy chọn):</label>
+            <input type="number" id="hallCinemaId" placeholder="Lọc theo rạp" />
+          </div>
+        </div>
+
+        <div id="hallPostData" class="hidden post-data">
+          <div class="form-group">
+            <label>Cinema ID:</label>
+            <input type="number" id="hallPostCinemaId" placeholder="ID rạp" />
+          </div>
+          <div class="form-group">
+            <label>Tên phòng:</label>
+            <input type="text" id="hallPostName" placeholder="VD: Phòng 1" />
+          </div>
+          <div class="form-group">
+            <label>Status ID:</label>
+            <input
+              type="number"
+              id="hallPostStatusId"
+              placeholder="ID trạng thái" />
+          </div>
+        </div>
+
+        <div id="hallUpdateId" class="hidden">
+          <div class="form-group">
+            <label>Hall ID (để cập nhật):</label>
+            <input
+              type="number"
+              id="hallUpdateIdValue"
+              placeholder="ID phòng cần cập nhật" />
+          </div>
+        </div>
+
+        <div id="hallDeleteId" class="hidden">
+          <div class="form-group">
+            <label>Hall ID (để xóa):</label>
+            <input
+              type="number"
+              id="hallDeleteIdValue"
+              placeholder="ID phòng cần xóa" />
+          </div>
+        </div>
+
+        <button class="btn" onclick="testHallAPI()">Test API - Halls</button>
+      </div>
+
+      <div class="section">
+        <h2>2. Trạng thái phòng (Hall Status)</h2>
+
+        <div class="form-group">
+          <label for="statusAction">Action:</label>
+          <select id="statusAction" title="Select an action for Hall Status" onchange="toggleStatusFields()">
+            <option value="getAll">getAll - Lấy danh sách</option>
+            <option value="getById">getById - Lấy theo ID</option>
+            <option value="create">create - Tạo mới</option>
+            <option value="update">update - Cập nhật</option>
+            <option value="delete">delete - Xóa</option>
+          </select>
+        </div>
+
+        <div id="statusGetById" class="hidden">
+          <div class="form-group">
+            <label>Status ID:</label>
+            <input type="number" id="statusId" placeholder="Nhập ID" />
+          </div>
+        </div>
+
+        <div id="statusPostData" class="hidden post-data">
+          <div class="form-group">
+            <label>Tên trạng thái:</label>
+            <input
+              type="text"
+              id="statusPostName"
+              placeholder="VD: Đang hoạt động" />
+          </div>
+        </div>
+
+        <div id="statusUpdateId" class="hidden">
+          <div class="form-group">
+            <label>Status ID (để cập nhật):</label>
+            <input
+              type="number"
+              id="statusUpdateIdValue"
+              placeholder="ID trạng thái cần cập nhật" />
+          </div>
+        </div>
+
+        <div id="statusDeleteId" class="hidden">
+          <div class="form-group">
+            <label>Status ID (để xóa):</label>
+            <input
+              type="number"
+              id="statusDeleteIdValue"
+              placeholder="ID trạng thái cần xóa" />
+          </div>
+        </div>
+
+        <button class="btn" onclick="testStatusAPI()">
+          Test API - Hall Status
+        </button>
+      </div>
+
+      <div class="section">
+        <h2>3. Loại ghế (Seat Types)</h2>
+
+        <div class="form-group">
+          <label for="seatTypeAction">Action:</label>
+          <select id="seatTypeAction" onchange="toggleSeatTypeFields()">
+            <option value="getAll">getAll - Lấy danh sách</option>
+            <option value="getById">getById - Lấy theo ID</option>
+            <option value="create">create - Tạo mới</option>
+            <option value="update">update - Cập nhật</option>
+            <option value="delete">delete - Xóa</option>
+          </select>
+        </div>
+
+        <div id="seatTypeGetById" class="hidden">
+          <div class="form-group">
+            <label>Seat Type ID:</label>
+            <input type="number" id="seatTypeId" placeholder="Nhập ID" />
+          </div>
+        </div>
+
+        <div id="seatTypePostData" class="hidden post-data">
+          <div class="form-group">
+            <label>Tên loại ghế:</label>
+            <input
+              type="text"
+              id="seatTypePostName"
+              placeholder="VD: VIP, Couple" />
+          </div>
+          <div class="form-group">
+            <label>Phụ thu (VNĐ):</label>
+            <input
+              type="number"
+              id="seatTypePostPrice"
+              placeholder="VD: 50000"
+              step="1000" />
+          </div>
+        </div>
+
+        <div id="seatTypeUpdateId" class="hidden">
+          <div class="form-group">
+            <label>Seat Type ID (để cập nhật):</label>
+            <input
+              type="number"
+              id="seatTypeUpdateIdValue"
+              placeholder="ID loại ghế cần cập nhật" />
+          </div>
+        </div>
+
+        <div id="seatTypeDeleteId" class="hidden">
+          <div class="form-group">
+            <label>Seat Type ID (để xóa):</label>
+            <input
+              type="number"
+              id="seatTypeDeleteIdValue"
+              placeholder="ID loại ghế cần xóa" />
+          </div>
+        </div>
+
+        <button class="btn" onclick="testSeatTypeAPI()">
+          Test API - Seat Types
+        </button>
+      </div>
+
+      <div id="result" class="result hidden"></div>
+    </div>
+
+    <script>
+      function toggleHallFields() {
+        const action = document.getElementById("hallAction").value;
+        document.getElementById("hallGetById").classList.add("hidden");
+        document.getElementById("hallGetAll").classList.add("hidden");
+        document.getElementById("hallPostData").classList.add("hidden");
+        document.getElementById("hallUpdateId").classList.add("hidden");
+        document.getElementById("hallDeleteId").classList.add("hidden");
+
+        if (action === "getById") {
+          document.getElementById("hallGetById").classList.remove("hidden");
+        } else if (action === "getAll") {
+          document.getElementById("hallGetAll").classList.remove("hidden");
+        } else if (action === "create") {
+          document.getElementById("hallPostData").classList.remove("hidden");
+        } else if (action === "update") {
+          document.getElementById("hallUpdateId").classList.remove("hidden");
+          document.getElementById("hallPostData").classList.remove("hidden");
+        } else if (action === "delete") {
+          document.getElementById("hallDeleteId").classList.remove("hidden");
+        }
+      }
+
+      function toggleStatusFields() {
+        const action = document.getElementById("statusAction").value;
+        document.getElementById("statusGetById").classList.add("hidden");
+        document.getElementById("statusPostData").classList.add("hidden");
+        document.getElementById("statusUpdateId").classList.add("hidden");
+        document.getElementById("statusDeleteId").classList.add("hidden");
+
+        if (action === "getById") {
+          document.getElementById("statusGetById").classList.remove("hidden");
+        } else if (action === "create") {
+          document.getElementById("statusPostData").classList.remove("hidden");
+        } else if (action === "update") {
+          document.getElementById("statusUpdateId").classList.remove("hidden");
+          document.getElementById("statusPostData").classList.remove("hidden");
+        } else if (action === "delete") {
+          document.getElementById("statusDeleteId").classList.remove("hidden");
+        }
+      }
+
+      function toggleSeatTypeFields() {
+        const action = document.getElementById("seatTypeAction").value;
+        document.getElementById("seatTypeGetById").classList.add("hidden");
+        document.getElementById("seatTypePostData").classList.add("hidden");
+        document.getElementById("seatTypeUpdateId").classList.add("hidden");
+        document.getElementById("seatTypeDeleteId").classList.add("hidden");
+
+        if (action === "getById") {
+          document.getElementById("seatTypeGetById").classList.remove("hidden");
+        } else if (action === "create") {
+          document
+            .getElementById("seatTypePostData")
+            .classList.remove("hidden");
+        } else if (action === "update") {
+          document
+            .getElementById("seatTypeUpdateId")
+            .classList.remove("hidden");
+          document
+            .getElementById("seatTypePostData")
+            .classList.remove("hidden");
+        } else if (action === "delete") {
+          document
+            .getElementById("seatTypeDeleteId")
+            .classList.remove("hidden");
+        }
+      }
+
+      function showResult(data, isError = false) {
+        const resultDiv = document.getElementById("result");
+        resultDiv.classList.remove("hidden", "error", "success");
+        resultDiv.classList.add(isError ? "error" : "success");
+        resultDiv.textContent = JSON.stringify(data, null, 2);
+      }
+
+      async function testHallAPI() {
+        const action = document.getElementById("hallAction").value;
+        let url = `test_api.php?controller=halls&action=${action}`;
+
+        const options = {
+          method: "GET",
+        };
+
+        if (action === "getById") {
+          const id = document.getElementById("hallId").value;
+          if (!id) {
+            showResult({ error: "Vui lòng nhập Hall ID" }, true);
+            return;
+          }
+          url += `&id=${id}`;
+        } else if (action === "getAll") {
+          const cinemaId = document.getElementById("hallCinemaId").value;
+          if (cinemaId) {
+            url += `&cinema_id=${cinemaId}`;
+          }
+        } else if (action === "create" || action === "update") {
+          options.method = "POST";
+          const formData = new FormData();
+
+          if (action === "update") {
+            const id = document.getElementById("hallUpdateIdValue").value;
+            if (!id) {
+              showResult({ error: "Vui lòng nhập Hall ID" }, true);
+              return;
+            }
+            url += `&id=${id}`;
+          }
+
+          formData.append(
+            "cinema_id",
+            document.getElementById("hallPostCinemaId").value,
+          );
+          formData.append(
+            "name",
+            document.getElementById("hallPostName").value,
+          );
+          formData.append(
+            "status_id",
+            document.getElementById("hallPostStatusId").value,
+          );
+          options.body = formData;
+        } else if (action === "delete") {
+          options.method = "POST";
+          const id = document.getElementById("hallDeleteIdValue").value;
+          if (!id) {
+            showResult({ error: "Vui lòng nhập Hall ID" }, true);
+            return;
+          }
+          url += `&id=${id}`;
+        }
+
+        try {
+          const response = await fetch(url, options);
+          const data = await response.json();
+          showResult(data, !data.success);
+        } catch (error) {
+          showResult({ error: error.message }, true);
+        }
+      }
+
+      async function testStatusAPI() {
+        const action = document.getElementById("statusAction").value;
+        let url = `test_api.php?controller=halls&action=getStatuses`;
+
+        const options = {
+          method: "GET",
+        };
+
+        if (action === "getById") {
+          const id = document.getElementById("statusId").value;
+          if (!id) {
+            showResult({ error: "Vui lòng nhập Status ID" }, true);
+            return;
+          }
+          url += `&id=${id}`;
+        } else if (action === "create" || action === "update") {
+          options.method = "POST";
+          const formData = new FormData();
+
+          if (action === "update") {
+            const id = document.getElementById("statusUpdateIdValue").value;
+            if (!id) {
+              showResult({ error: "Vui lòng nhập Status ID" }, true);
+              return;
+            }
+            url += `&id=${id}`;
+          }
+
+          formData.append(
+            "status_name",
+            document.getElementById("statusPostName").value,
+          );
+          options.body = formData;
+        } else if (action === "delete") {
+          options.method = "POST";
+          const id = document.getElementById("statusDeleteIdValue").value;
+          if (!id) {
+            showResult({ error: "Vui lòng nhập Status ID" }, true);
+            return;
+          }
+          url += `&id=${id}`;
+        }
+
+        try {
+          const response = await fetch(url, options);
+          const data = await response.json();
+          showResult(data, !data.success);
+        } catch (error) {
+          showResult({ error: error.message }, true);
+        }
+      }
+
+      async function testSeatTypeAPI() {
+        const action = document.getElementById("seatTypeAction").value;
+        let url = `test_api.php?controller=seat_types&action=${action}`;
+
+        const options = {
+          method: "GET",
+        };
+
+        if (action === "getById") {
+          const id = document.getElementById("seatTypeId").value;
+          if (!id) {
+            showResult({ error: "Vui lòng nhập Seat Type ID" }, true);
+            return;
+          }
+          url += `&id=${id}`;
+        } else if (action === "create" || action === "update") {
+          options.method = "POST";
+          const formData = new FormData();
+
+          if (action === "update") {
+            const id = document.getElementById("seatTypeUpdateIdValue").value;
+            if (!id) {
+              showResult({ error: "Vui lòng nhập Seat Type ID" }, true);
+              return;
+            }
+            url += `&id=${id}`;
+          }
+
+          formData.append(
+            "type_name",
+            document.getElementById("seatTypePostName").value,
+          );
+          formData.append(
+            "price_surcharge",
+            document.getElementById("seatTypePostPrice").value,
+          );
+          options.body = formData;
+        } else if (action === "delete") {
+          options.method = "POST";
+          const id = document.getElementById("seatTypeDeleteIdValue").value;
+          if (!id) {
+            showResult({ error: "Vui lòng nhập Seat Type ID" }, true);
+            return;
+          }
+          url += `&id=${id}`;
+        }
+
+        try {
+          const response = await fetch(url, options);
+          const data = await response.json();
+          showResult(data, !data.success);
+        } catch (error) {
+          showResult({ error: error.message }, true);
+        }
+      }
+    </script>
+  </body>
+</html>

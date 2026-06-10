@@ -1,0 +1,59 @@
+/* CARD */
+.dashboard-card {
+  background: #111827;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* TABLE */
+.permission-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  color: #e5e7eb;
+}
+
+/* HEADER */
+.permission-matrix thead th {
+  background: #1f2933;
+  padding: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #273244;
+}
+
+/* ROW */
+.permission-matrix tbody tr {
+  background: #111827;
+  transition: background 0.2s ease;
+}
+
+.permission-matrix tbody tr:hover {
+  background: #1e293b;
+}
+
+/* CELL */
+.permission-matrix td {
+  padding: 12px;
+  border-bottom: 1px solid #273244;
+  text-align: center;
+}
+
+.permission-matrix td:first-child {
+  text-align: left;
+  color: #d1d5db;
+}
+
+/* MODULE ROW */
+.module-row td {
+  background: #0f172a;
+  color: #9ca3af;
+  font-weight: 600;
+  border-bottom: 1px solid #273244;
+}
+
+/* CHECKBOX */
+.permission-matrix input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #22c55e;
+  cursor: pointer;
+}
