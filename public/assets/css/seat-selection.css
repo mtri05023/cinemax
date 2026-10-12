@@ -1,0 +1,314 @@
+/* --- PHẦN LAYOUT CHUNG (GIỮ NGUYÊN) --- */
+.booking-steps {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -28px;
+    width: 16px;
+    height: 2px;
+    background: var(--border-color);
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.step-label {
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.step.active .step-number {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.step.active .step-label {
+    color: var(--text-primary);
+}
+
+.step.completed .step-number {
+    background: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.step.completed .step-label {
+    color: var(--text-primary);
+}
+
+.btn-back {
+    padding: 10px 24px;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-back:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.booking-container {
+    padding: 40px 0 80px;
+    min-height: calc(100vh - 80px);
+}
+
+.booking-layout {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 40px;
+}
+
+.screen-section {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+}
+
+.showtime-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.info-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.info-item .label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-right: 5px;
+}
+
+.info-item .value {
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+}
+
+.screen-wrapper {
+    display: inline-block;
+    min-width: 100%;
+}
+
+.screen {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.screen svg {
+    width: 80%;
+    height: 40px;
+    color: var(--primary-color);
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.screen span {
+    display: block;
+    font-size: 12px;
+    color: var(--text-secondary);
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.seats-container {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.row-label {
+    width: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* --- STYLE TỪNG GHẾ & KÍCH THƯỚC CHUẨN --- */
+.seat {
+    width: 40px;      /* Kích thước chuẩn */
+    height: 40px;     /* Kích thước chuẩn */
+    border-radius: 6px;
+    background: #444; 
+    border: 1px solid transparent; 
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff; /* Chữ trắng mặc định */
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.seat:hover:not(.occupied):not(.sold):not(.held):not(.reserved) {
+    transform: scale(1.15);
+    z-index: 10;
+    border-color: #fff;
+}
+
+/* ------------------------------------------------ */
+/* --- 1. MÀU LOẠI GHẾ (SỬA TẠI ĐÂY) --- */
+/* ------------------------------------------------ */
+
+/* Loại 1: Ghế Thường (ID 1) -> MÀU XÁM */
+.seat.type-1 {
+    background-color: #555555; 
+    border: 1px solid #777777;
+    color: #fff;
+}
+
+/* Loại 2: Ghế VIP (ID 2) -> MÀU VÀNG GOLD */
+.seat.type-2 {
+    background: linear-gradient(135deg, #ffd700 0%, #ffca28 100%);
+    border: 1px solid #ffb300;
+    color: #000; /* Chữ đen cho nổi trên nền vàng */
+    font-weight: bold;
+    text-shadow: none;
+}
+
+/* (Dự phòng) Nếu ID trong DB bị lệch, gán thêm ID 3 */
+.seat.type-3 {
+    background: #e91e63; /* Hồng cho ghế đôi nếu có */
+    border: 1px solid #f48fb1;
+}
+
+
+/* ------------------------------------------------ */
+/* --- 2. MÀU TRẠNG THÁI (Đè lên màu loại ghế) --- */
+/* ------------------------------------------------ */
+
+/* Trạng thái 1: Đang chọn (Selected) - XANH LÁ */
+.seat.selected {
+    background: #46d369 !important; 
+    border-color: #2e7d32 !important;
+    color: #fff !important;
+    box-shadow: 0 0 10px rgba(70, 211, 105, 0.6);
+    transform: scale(1.1);
+}
+
+/* Trạng thái 2: Đã bán/Đã đặt (Sold) - ĐỎ ĐẬM */
+.seat.occupied, .seat.sold {
+    background: #b71c1c !important; 
+    border-color: #d32f2f !important;
+    color: #ffcdd2 !important;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Trạng thái 3: Đang giữ (Held) - XANH DƯƠNG */
+.seat.held {
+    background: #0288d1 !important;
+    border-color: #0277bd !important;
+    color: #fff !important;
+    cursor: not-allowed;
+}
+
+
+/* --- CHÚ THÍCH (LEGEND) --- */
+.seat-legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border-color);
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+}
+
+/* --- CHÚ THÍCH (LEGEND CSS) --- */
+.seat-demo {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+/* Phải khớp màu với ghế chính */
+.seat-demo.type-1 { background: #7d7d7d; border-color: #999; } /* Thường */
+.seat-demo.type-2 { background: linear-gradient(135deg, #ffc107, #ff9800); border-color: #ffb300; } /* VIP */
+.seat-demo.selected { background: #46d369; border-color: #2e7d32; }
+.seat-demo.sold { background: #b71c1c; opacity: 0.7; }
+.seat-demo.held { background: #0288d1; }
+
+
+/* --- CÁC PHẦN KHÁC GIỮ NGUYÊN --- */
+.booking-sidebar { display: flex; flex-direction: column; gap: 20px; }
+.booking-summary { background: var(--bg-secondary); border-radius: 12px; padding: 32px; border: 1px solid var(--border-color); position: sticky; top: 100px; }
+.booking-summary h3 { font-size: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; }
+.selected-seats-list { display: flex; flex-wrap: wrap; gap: 8px; min-height: 30px; }
+.empty-message { color: var(--text-secondary); font-style: italic; font-size: 13px; }
+.seat-tag { padding: 6px 12px; background: var(--bg-tertiary); border-radius: 4px; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 8px; border: 1px solid var(--border-color); }
+.price-row { display: flex; justify-content: space-between; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-color); font-size: 16px; }
+.price-row span:last-child { font-size: 20px; font-weight: 700; color: var(--primary-color); }
+.btn-continue { width: 100%; padding: 14px; background: var(--primary-color); border: none; border-radius: var(--border-radius); font-size: 16px; font-weight: 700; cursor: pointer; transition: var(--transition); margin-top: 20px; text-transform: uppercase; }
+.btn-continue:hover:not(:disabled) { background: var(--primary-dark); }
+.btn-continue:disabled { opacity: 0.5; cursor: not-allowed; background: var(--bg-tertiary); }
+.countdown-timer { background: var(--bg-secondary); border: 1px solid var(--warning-color); border-radius: var(--border-radius); padding: 15px; text-align: center; color: var(--warning-color); font-size: 14px; background: rgba(255, 165, 0, 0.1); }
+.countdown-timer strong { font-size: 16px; margin-left: 5px; }
+
+@media (max-width: 1200px) {
+    .booking-layout { grid-template-columns: 1fr; }
+    .booking-summary { position: static; }
+}
+
+@media (max-width: 768px) {
+    .booking-steps { display: none; }
+    .showtime-info { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .seat { width: 30px; height: 30px; font-size: 10px; margin: 2px; }
+}

@@ -1,0 +1,48 @@
+.btn-filter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: #6c757d;
+  background-color: transparent;
+  border: 1px solid #6c757d;
+  border-radius: 0.375rem;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Hover */
+.btn-filter:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+/* Focus */
+.btn-filter:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.4);
+}
+
+/* Active */
+.btn-filter:active {
+  background-color: #5c636a;
+  border-color: #565e64;
+}
+
+/* Disabled */
+.btn-filter:disabled,
+.btn-filter.disabled {
+  opacity: 0.65;
+  pointer-events: none;
+}

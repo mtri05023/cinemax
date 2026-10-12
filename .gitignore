@@ -1,9 +1,16 @@
+
+# Browser tests
 cinemax/tests/browser/node_modules/
 cinemax/tests/browser/fixture.json
 cinemax/tests/*.gate
 
+# Git backup
 **/.git-backup/
+
+# Environment files
 **/.env
 
-**/.git-backup/
-**/.env
+# Uploaded files
+/public/assets/uploads/
+cinemax/public/assets/uploads/
+
