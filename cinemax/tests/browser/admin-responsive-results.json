@@ -1,0 +1,3906 @@
+{
+  "zoomMethod": "CDP CSS viewport and device scale emulation; not native browser toolbar zoom",
+  "results": [
+    {
+      "label": "dashboard/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "dashboard/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "movies/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/day/320",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/day/375",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/day/430",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/day/768",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/day/1024",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/day/1280",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/day/1440",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/day/1920",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/week/320",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/week/375",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/week/430",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/week/768",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/week/1024",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/week/1280",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/week/1440",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "shows/week/1920",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "halls/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "cinemas/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "users/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "bookings/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "combos/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "promotions/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "genres/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "roles/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "permissions/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seat_types/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "seats/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/320/zoom-80",
+      "width": 400,
+      "scroll": 400,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/375/zoom-80",
+      "width": 469,
+      "scroll": 469,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/430/zoom-80",
+      "width": 538,
+      "scroll": 538,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/768/zoom-80",
+      "width": 960,
+      "scroll": 960,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/1024/zoom-80",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/1280/zoom-80",
+      "width": 1600,
+      "scroll": 1600,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/1440/zoom-80",
+      "width": 1800,
+      "scroll": 1800,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/1920/zoom-80",
+      "width": 2400,
+      "scroll": 2400,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/320/zoom-100",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/375/zoom-100",
+      "width": 375,
+      "scroll": 375,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/430/zoom-100",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/768/zoom-100",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/1024/zoom-100",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/1280/zoom-100",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/1440/zoom-100",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/1920/zoom-100",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/320/zoom-125",
+      "width": 256,
+      "scroll": 256,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/375/zoom-125",
+      "width": 300,
+      "scroll": 300,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/430/zoom-125",
+      "width": 344,
+      "scroll": 344,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/768/zoom-125",
+      "width": 614,
+      "scroll": 614,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/1024/zoom-125",
+      "width": 819,
+      "scroll": 819,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/1280/zoom-125",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/1440/zoom-125",
+      "width": 1152,
+      "scroll": 1152,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "404/1920/zoom-125",
+      "width": 1536,
+      "scroll": 1536,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "continuous-resize/1920",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "continuous-resize/1024",
+      "width": 1024,
+      "scroll": 1024,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "continuous-resize/320",
+      "width": 320,
+      "scroll": 320,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "continuous-resize/1440",
+      "width": 1440,
+      "scroll": 1440,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "continuous-resize/430",
+      "width": 430,
+      "scroll": 430,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "continuous-resize/1280",
+      "width": 1280,
+      "scroll": 1280,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "continuous-resize/768",
+      "width": 768,
+      "scroll": 768,
+      "outside": [],
+      "mainLeft": 0,
+      "sidebarRight": 0,
+      "sidebarInert": true,
+      "hiddenOverflow": false
+    },
+    {
+      "label": "continuous-resize/1920",
+      "width": 1920,
+      "scroll": 1920,
+      "outside": [],
+      "mainLeft": 260,
+      "sidebarRight": 260,
+      "sidebarInert": false,
+      "hiddenOverflow": false
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "resourceFailures": [
+    {
+      "url": "https://cdn.jsdelivr.net/npm/chart.js",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/chart.js",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/chart.js",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/chart.js",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    }
+  ],
+  "interactions": [
+    "movies: existing dialog handler opens",
+    "movies/addMovieModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "movies/editMovieModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "halls: existing dialog handler opens",
+    "halls/addScreenModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "halls/editHallModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "cinemas: existing dialog handler opens",
+    "cinemas/addTheaterModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "cinemas/editCinemaModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "users: existing dialog handler opens",
+    "users/addUserModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "users/updateUserModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "bookings: existing dialog handler opens",
+    "bookings/billModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "combos: existing dialog handler opens",
+    "combos/addFoodModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "combos/editFoodModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "promotions: existing dialog handler opens",
+    "promotions/addPromoModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "promotions/updatePromoModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "genres: existing dialog handler opens",
+    "genres/addGenreModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "genres/editGenreModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "roles: existing dialog handler opens",
+    "roles/addRoleModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "roles/updateRoleModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "permissions/addPermissionModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "permissions/updatePermissionModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "seat_types: existing dialog handler opens",
+    "seat_types/addSeatTypeModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "seat_types/editSeatTypeModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "seats: existing dialog handler opens",
+    "seats: existing dialog handler opens",
+    "seats/createSeatModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "seats/autoCreateSeatModal: checked all 8 widths and 3 zoom metrics, footer accessible by scrolling",
+    "All 13 admin sidebar page links clicked at 375px"
+  ],
+  "skipped": [
+    "permissions: no existing record with an editable/viewable action"
+  ]
+}

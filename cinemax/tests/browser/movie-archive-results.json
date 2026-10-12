@@ -1,0 +1,15 @@
+{
+  "passed": 10,
+  "checks": [
+    "Dismissing archive confirmation keeps movie active",
+    "Archived movie remains in admin list",
+    "Archived movie exposes explicit renewal/reactivation action",
+    "Server rejects reactivation without license attestation",
+    "Archived movie retains its historical schedule",
+    "Archived movie is excluded from schedule creation",
+    "Direct old show URL cannot sell seats while movie is archived",
+    "Archived filter finds the movie",
+    "License confirmation reactivates original movie record",
+    "Archive/reactivate UI has no JavaScript errors"
+  ]
+}

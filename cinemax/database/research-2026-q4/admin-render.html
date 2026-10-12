@@ -1,0 +1,1580 @@
+
+<section class="movies">
+
+    <header class="admin-header">
+        <h1>Quản lý phim</h1>
+                <button class="btn-add" onclick="openModal('addMovieModal')">
+            <span>Thêm phim mới</span>
+        </button>
+            </header>
+
+    <div class="dashboard-content">
+        <div class="dashboard-card">
+
+            
+            
+            
+            
+            <form method="GET" action="index.php" class="filter-bar">
+                <input type="hidden" name="page" value="movies">
+
+                <input
+                    type="text"
+                    name="q"
+                    value=""
+                    placeholder="Tìm tên phim..."
+                    style="padding:8px; border-radius:4px; border:1px solid #444; background:#222; color:#fff;">
+
+                <select
+                    name="genre_id"
+                    style="padding:8px; border-radius:4px; border:1px solid #444; background:#222; color:#fff;">
+                    <option value="">Tất cả thể loại</option>
+                                            <option value="15"
+                            >
+                            Bí ẩn                        </option>
+                                            <option value="8"
+                            >
+                            Bom Tấn                        </option>
+                                            <option value="13"
+                            >
+                            Giả tưởng                        </option>
+                                            <option value="12"
+                            >
+                            Gia đình                        </option>
+                                            <option value="16"
+                            >
+                            Giật gân                        </option>
+                                            <option value="9"
+                            >
+                            Hài                        </option>
+                                            <option value="1"
+                            >
+                            Hành động                        </option>
+                                            <option value="11"
+                            >
+                            Hoạt hình                        </option>
+                                            <option value="17"
+                            >
+                            Khoa học viễn tưởng                        </option>
+                                            <option value="4"
+                            >
+                            Kịch Hài                        </option>
+                                            <option value="3"
+                            >
+                            Kinh dị                        </option>
+                                            <option value="10"
+                            >
+                            Phiêu lưu                        </option>
+                                            <option value="6"
+                            >
+                            Phim Hài                        </option>
+                                            <option value="14"
+                            >
+                            Tâm lý                        </option>
+                                            <option value="2"
+                            >
+                            Tình cảm                        </option>
+                                            <option value="7"
+                            >
+                            Viễn Tưởng Khoa Học                        </option>
+                                    </select>
+
+                                <select
+                    name="status_text"
+                    style="padding:8px; border-radius:4px; border:1px solid #444; background:#222; color:#fff;">
+                    <option value="" selected>Tất cả trạng thái</option>
+                <option value="Sắp chiếu" >Sắp chiếu</option>
+<option value="Đang chiếu" >Đang chiếu</option>
+<option value="Ngừng chiếu" >Ngừng chiếu</option>
+                </select>
+
+                <button type="submit" class="btn-primary">Lọc</button>
+                <a href="index.php?page=movies" class="btn-action">Reset</a>
+            </form>
+
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Poster</th>
+                            <th>Tên phim</th>
+                            <th>Thể loại</th>
+                            <th>Thời lượng</th>
+                            <th>Ngày chiếu</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                                                                    <tr>
+                                <td>#46</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/focker-in-law-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Gặp Gỡ Thông Gia: Dâu Mới Trình Làng</strong></td>
+                                <td>Hài, Tình cảm</td>
+                                <td>120p</td>
+                                <td>27/11/2026</td>
+                                <td>
+                                    <span class="badge badge-warning">Sắp chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            46,
+                                            "G\u1eb7p G\u1ee1 Th\u00f4ng Gia: D\u00e2u M\u1edbi Tr\u00ecnh L\u00e0ng",
+                                            "B\u1ea1n g\u00e1i c\u1ee7a con trai Greg Focker ra m\u1eaft gia \u0111\u00ecnh, k\u00e9o theo nh\u1eefng ph\u00e9p th\u1eed l\u00f2ng tin quen thu\u1ed9c. C\u00e1c th\u1ebf h\u1ec7 nh\u00e0 Focker l\u1ea1i r\u01a1i v\u00e0o m\u1ed9t chu\u1ed7i t\u00ecnh hu\u1ed1ng h\u00e0i h\u01b0\u1edbc khi \u0111\u00f3n th\u00e0nh vi\u00ean m\u1edbi.",
+                                            120,
+                                            "2026-11-27",
+                                            "https:\/\/www.youtube.com\/watch?v=vyISuWUWcFs",
+                                            1,
+                                            "John Hamburg",
+                                            "Robert De Niro, Ben Stiller, Ariana Grande, Skyler Gisondo, Owen Wilson, Teri Polo",
+                                            "assets\/uploads\/movies\/focker-in-law-2026.webp",
+                                            ["2","9"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=46"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#45</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/ngay-con-con-me-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Ngày Con Còn Mẹ</strong></td>
+                                <td>Gia đình, Tâm lý</td>
+                                <td>110p</td>
+                                <td>11/11/2026</td>
+                                <td>
+                                    <span class="badge badge-warning">Sắp chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            45,
+                                            "Ng\u00e0y Con C\u00f2n M\u1eb9",
+                                            "M\u00e2y l\u1edbn l\u00ean v\u1edbi c\u1ea3m gi\u00e1c m\u1eb9 \u01b0u \u00e1i anh trai h\u01a1n m\u00ecnh. M\u1ed9t bi\u1ebfn c\u1ed1 khi\u1ebfn c\u00f4 nh\u00ecn l\u1ea1i nh\u1eefng hi\u1ec3u l\u1ea7m k\u00e9o d\u00e0i v\u00e0 h\u1ecdc c\u00e1ch th\u1ea5u hi\u1ec3u t\u00ecnh y\u00eau m\u00e0 m\u1eb9 d\u00e0nh cho c\u00e1c con.",
+                                            110,
+                                            "2026-11-11",
+                                            "https:\/\/www.youtube.com\/watch?v=LiOffO3x6nw",
+                                            1,
+                                            "V\u0169 Ng\u1ecdc \u0110\u00e3ng",
+                                            "Ph\u01b0\u01a1ng Anh \u0110\u00e0o, H\u1ed3ng \u0110\u00e0o, Ma Ran \u0110\u00f4, Nguy\u00ean Th\u1ea3o, Tr\u1ea7n Huy Anh",
+                                            "assets\/uploads\/movies\/ngay-con-con-me-2026.webp",
+                                            ["12","14"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=45"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#44</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/godzilla-tru-khong-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Godzilla Trừ Không</strong></td>
+                                <td>Hành động, Khoa học viễn tưởng, Kinh dị</td>
+                                <td>135p</td>
+                                <td>06/11/2026</td>
+                                <td>
+                                    <span class="badge badge-warning">Sắp chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            44,
+                                            "Godzilla Tr\u1eeb Kh\u00f4ng",
+                                            "Nh\u1eadt B\u1ea3n \u0111ang c\u1ed1 g\u1eafng h\u1ed3i ph\u1ee5c sau chi\u1ebfn tranh v\u00e0 cu\u1ed9c t\u1ea5n c\u00f4ng tr\u01b0\u1edbc \u0111\u00f3 c\u1ee7a Godzilla. Khi cu\u1ed9c s\u1ed1ng t\u01b0\u1edfng nh\u01b0 b\u00ecnh y\u00ean tr\u1edf l\u1ea1i, m\u1ed9t m\u1ed1i \u0111e d\u1ecda m\u1edbi xu\u1ea5t hi\u1ec7n, \u0111\u1eb7t hy v\u1ecdng c\u1ee7a con ng\u01b0\u1eddi tr\u01b0\u1edbc th\u1eed th\u00e1ch.",
+                                            135,
+                                            "2026-11-06",
+                                            "https:\/\/www.youtube.com\/watch?v=-HhqsE1gK38",
+                                            1,
+                                            "Takashi Yamazaki",
+                                            "Ry\u00fbnosuke Kamiki, Minami Hamabe, Yuki Yamada, Kuranosuke Sasaki, Jun Kunimura, Miou Tanaka",
+                                            "assets\/uploads\/movies\/godzilla-tru-khong-2026.webp",
+                                            ["1","3","17"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=44"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#43</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/an-mang-karaoke-1-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Án Mạng Karaoke</strong></td>
+                                <td>Bí ẩn, Giật gân, Hài</td>
+                                <td>96p</td>
+                                <td>30/10/2026</td>
+                                <td>
+                                    <span class="badge badge-warning">Sắp chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            43,
+                                            "\u00c1n M\u1ea1ng Karaoke",
+                                            "M\u1ed9t chuy\u1ebfn tu t\u1eadp tr\u00ean n\u00fai tr\u1edf th\u00e0nh hi\u1ec7n tr\u01b0\u1eddng \u00e1n m\u1ea1ng khi b\u00e0 Th\u1ee7y b\u1ecb s\u00e1t h\u1ea1i. Gi\u1eefa nh\u00f3m ng\u01b0\u1eddi \u0111\u1ec1u c\u00f3 \u0111\u1ed9ng c\u01a1, nh\u1eefng \u0111i\u1ec1u tra vi\u00ean b\u1ea5t \u0111\u1eafc d\u0129 ph\u1ea3i t\u00ecm ra hung th\u1ee7 \u0111ang \u1ea9n m\u00ecnh.",
+                                            96,
+                                            "2026-10-30",
+                                            "https:\/\/www.youtube.com\/watch?v=UOjRGIatX38",
+                                            1,
+                                            "Ho\u00e0ng L\u00ea",
+                                            "V\u00e2n Dung, \u0110o\u00e0n Thi\u00ean \u00c2n, \u0110\u1ea1i Ngh\u0129a",
+                                            "assets\/uploads\/movies\/an-mang-karaoke-1-2026.webp",
+                                            ["9","15","16"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=43"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#42</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/shaun-the-sheep-quai-la-ghe-nha-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Shaun the Sheep: Quái Lạ Ghé Nhà</strong></td>
+                                <td>Gia đình, Hài, Hoạt hình, Kinh dị, Phiêu lưu</td>
+                                <td>81p</td>
+                                <td>16/10/2026</td>
+                                <td>
+                                    <span class="badge badge-warning">Sắp chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            42,
+                                            "Shaun the Sheep: Qu\u00e1i L\u1ea1 Gh\u00e9 Nh\u00e0",
+                                            "V\u01b0\u1eddn b\u00ed ng\u00f4 chu\u1ea9n b\u1ecb cho Halloween b\u1ecb ph\u00e1 h\u1ecfng, khi\u1ebfn Shaun th\u1eed d\u00f9ng khoa h\u1ecdc \u0111\u1ec3 c\u1ee9u m\u00f9a l\u1ec5 h\u1ed9i. Th\u00ed nghi\u1ec7m g\u00e2y ra r\u1eafc r\u1ed1i m\u1edbi, m\u1ed9t qu\u00e1i th\u00fa xu\u1ea5t hi\u1ec7n v\u00e0 \u0111\u00e0n c\u1eebu ph\u1ea3i \u0111i t\u00ecm \u00f4ng ch\u1ee7 m\u1ea5t t\u00edch.",
+                                            81,
+                                            "2026-10-16",
+                                            "https:\/\/www.youtube.com\/watch?v=UZ46Smi6mOw",
+                                            1,
+                                            "Steve Cox, Matthew Walker",
+                                            "Justin Fletcher, John Sparkes, Nina Sosanya, Kate Harbour, Andy Nyman, Simon Greenall",
+                                            "assets\/uploads\/movies\/shaun-the-sheep-quai-la-ghe-nha-2026.webp",
+                                            ["3","9","10","11","12"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=42"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#41</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/quy-an-tang-4-ho-tinh-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Quỷ Ăn Tạng 4: Hổ Tinh</strong></td>
+                                <td>Giật gân, Hành động, Kinh dị</td>
+                                <td>111p</td>
+                                <td>16/10/2026</td>
+                                <td>
+                                    <span class="badge badge-warning">Sắp chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            41,
+                                            "Qu\u1ef7 \u0102n T\u1ea1ng 4: H\u1ed5 Tinh",
+                                            "Trong nhi\u1ec7m v\u1ee5 t\u00ecm ng\u01b0\u1eddi m\u1ea5t t\u00edch, Yak v\u00e0 trung s\u0129 Paphan ti\u1ebfn v\u00e0o khu r\u1eebng nguy hi\u1ec3m. H\u1ecd ph\u1ea3i ch\u1ed1ng l\u1ea1i m\u1ed9t H\u1ed5 Tinh c\u00f3 kh\u1ea3 n\u0103ng bi\u1ebfn h\u00ecnh, \u0111\u1ed3ng th\u1eddi t\u00ecm hi\u1ec3u b\u00ed m\u1eadt \u0111\u1eb1ng sau nh\u1eefng cu\u1ed9c s\u0103n ng\u01b0\u1eddi.",
+                                            111,
+                                            "2026-10-16",
+                                            "https:\/\/www.youtube.com\/watch?v=0t29-MGiths",
+                                            1,
+                                            "Narit Yuvaboon, Thanadet Pradit, Chalit Krileadmongkon",
+                                            "Nadech Kugimiya, Ong-art Cheamcharoenpornkul, Maylada Susri, Wichapas Sumettikul, Sahajak Boonthanakit, Akarin Akaranitimaytharatt",
+                                            "assets\/uploads\/movies\/quy-an-tang-4-ho-tinh-2026.webp",
+                                            ["1","3","16"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=41"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#40</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/an-mang-xem-hoan-hao-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Án Mạng Xém Hoàn Hảo</strong></td>
+                                <td>Bí ẩn, Hài</td>
+                                <td>124p</td>
+                                <td>09/10/2026</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            40,
+                                            "\u00c1n M\u1ea1ng X\u00e9m Ho\u00e0n H\u1ea3o",
+                                            "Trinh t\u1ec9nh d\u1eady t\u1ea1i phim tr\u01b0\u1eddng, m\u1ea5t tr\u00ed nh\u1edb v\u00e0 b\u1ecb nghi li\u00ean quan \u0111\u1ebfn m\u1ed9t v\u1ee5 gi\u1ebft ng\u01b0\u1eddi. C\u00f9ng th\u00e1m t\u1eed \u0110\u1ea1i, c\u00f4 t\u00ecm manh m\u1ed1i gi\u1eefa nh\u1eefng b\u00ed m\u1eadt c\u1ee7a gi\u1edbi gi\u1ea3i tr\u00ed \u0111\u1ec3 l\u00e0m s\u00e1ng t\u1ecf s\u1ef1 th\u1eadt.",
+                                            124,
+                                            "2026-10-09",
+                                            "https:\/\/www.youtube.com\/watch?v=IW-k9cMySWg",
+                                            2,
+                                            "\u0110\u1ee9c Nguy\u1ec5n",
+                                            "Anh T\u00fa Atus, DJ Mie, V\u0169 Ng\u1ecdc Anh, Huy Kh\u00e1nh, Long \u0110\u1eb9p Trai, S\u1ef9 To\u00e0n",
+                                            "assets\/uploads\/movies\/an-mang-xem-hoan-hao-2026.webp",
+                                            ["9","15"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=40"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#39</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/nguoi-me-khac-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Người Mẹ Khác</strong></td>
+                                <td>Kinh dị</td>
+                                <td>93p</td>
+                                <td>09/10/2026</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            39,
+                                            "Ng\u01b0\u1eddi M\u1eb9 Kh\u00e1c",
+                                            "Bela nh\u1eadn ra m\u1ed9t th\u1ef1c th\u1ec3 \u0111\u00e1ng s\u1ee3 trong t\u1ee7 qu\u1ea7n \u00e1o khi gia \u0111\u00ecnh \u0111ang r\u1ea1n n\u1ee9t. Mang h\u00ecnh d\u00e1ng gi\u1ed1ng m\u1eb9 c\u00f4, sinh v\u1eadt \u1ea5y bi\u1ebfn m\u00e1i nh\u00e0 th\u00e0nh n\u01a1i m\u00e0 Bela kh\u00f4ng c\u00f2n bi\u1ebft n\u00ean tin ai.",
+                                            93,
+                                            "2026-10-09",
+                                            "https:\/\/www.youtube.com\/watch?v=8qy8tHRKQoA",
+                                            2,
+                                            "Rob Savage",
+                                            "Jessica Chastain, Arabella Olivia Clark, Jay Duplass, Dichen Lachman, Arian Moayed, Karen Allen",
+                                            "assets\/uploads\/movies\/nguoi-me-khac-2026.webp",
+                                            ["3"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=39"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#38</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/blue-lock-cuoc-chien-cua-nhung-tien-dao-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Blue Lock: Cuộc Chiến Của Những Tiền Đạo</strong></td>
+                                <td>Hành động, Tâm lý</td>
+                                <td>127p</td>
+                                <td>09/10/2026</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            38,
+                                            "Blue Lock: Cu\u1ed9c Chi\u1ebfn C\u1ee7a Nh\u1eefng Ti\u1ec1n \u0110\u1ea1o",
+                                            "Ba tr\u0103m c\u1ea7u th\u1ee7 tr\u1ebb b\u01b0\u1edbc v\u00e0o ch\u01b0\u01a1ng tr\u00ecnh hu\u1ea5n luy\u1ec7n Blue Lock \u0111\u1ec3 tranh v\u1ecb tr\u00ed ti\u1ec1n \u0111\u1ea1o xu\u1ea5t s\u1eafc nh\u1ea5t. C\u00e1c v\u00f2ng tuy\u1ec3n ch\u1ecdn kh\u1ed1c li\u1ec7t th\u1eed th\u00e1ch tham v\u1ecdng v\u00e0 b\u1ea3n l\u0129nh c\u1ee7a t\u1eebng ng\u01b0\u1eddi. \u0110\u00e2y l\u00e0 b\u1ea3n chuy\u1ec3n th\u1ec3 ng\u01b0\u1eddi \u0111\u00f3ng.",
+                                            127,
+                                            "2026-10-09",
+                                            "https:\/\/www.youtube.com\/watch?v=9spa9_P9dRY",
+                                            2,
+                                            "Yusuke Taki",
+                                            "Fumiya Takahashi, Kaito Sakurai, Kyohei Takahashi, Kouta Nomura, Yuzu Aoki, Sho Nishigaki",
+                                            "assets\/uploads\/movies\/blue-lock-cuoc-chien-cua-nhung-tien-dao-2026.webp",
+                                            ["1","14"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=38"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#37</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/trai-tim-quai-thu-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Trái Tim Quái Thú</strong></td>
+                                <td>Hành động, Phiêu lưu</td>
+                                <td>101p</td>
+                                <td>02/10/2026</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            37,
+                                            "Tr\u00e1i Tim Qu\u00e1i Th\u00fa",
+                                            "S\u0129 quan James Belmont v\u00e0 ch\u00fa ch\u00f3 Odin s\u1ed1ng s\u00f3t sau tai n\u1ea1n m\u00e1y bay t\u1ea1i Alaska. Gi\u1eefa v\u00f9ng thi\u00ean nhi\u00ean hi\u1ec3m tr\u1edf, h\u1ecd ph\u1ea3i d\u1ef1a v\u00e0o nhau \u0111\u1ec3 t\u00ecm \u0111\u01b0\u1eddng tho\u00e1t v\u00e0 v\u01b0\u1ee3t qua cu\u1ed9c chi\u1ebfn sinh t\u1ed3n.",
+                                            101,
+                                            "2026-10-02",
+                                            "https:\/\/www.youtube.com\/watch?v=_1F2MrfQLjo",
+                                            2,
+                                            "David Ayer",
+                                            "Brad Pitt, J.K. Simmons, Anna Lambe",
+                                            "assets\/uploads\/movies\/trai-tim-quai-thu-2026.webp",
+                                            ["1","10"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=37"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#36</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/than-su-chung-quy-linh-gioi-dai-chien-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Thần Sư Chung Quỳ: Linh Giới Đại Chiến</strong></td>
+                                <td>Giả tưởng, Hành động, Hoạt hình</td>
+                                <td>96p</td>
+                                <td>02/10/2026</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            36,
+                                            "Th\u1ea7n S\u01b0 Chung Qu\u1ef3: Linh Gi\u1edbi \u0110\u1ea1i Chi\u1ebfn",
+                                            "\u0110\u01b0\u1ee3c Chung Qu\u1ef3 c\u1ee9u gi\u00fap, S\u01a1 C\u1eedu b\u01b0\u1edbc v\u00e0o th\u1ebf gi\u1edbi c\u1ee7a nh\u1eefng linh h\u1ed3n v\u00e0 y\u00eau qu\u00e1i. C\u00f4 mong tr\u1edf th\u00e0nh h\u1ecdc tr\u00f2 c\u1ee7a v\u1ecb th\u1ee3 s\u0103n huy\u1ec1n tho\u1ea1i, c\u00f9ng anh b\u1ea3o v\u1ec7 s\u1ef1 c\u00e2n b\u1eb1ng gi\u1eefa hai c\u00f5i.",
+                                            96,
+                                            "2026-10-02",
+                                            "https:\/\/www.youtube.com\/watch?v=KEBDVoBTeTk",
+                                            2,
+                                            "Yuxi Wang, \u9ec4\u5c71\u5ddd",
+                                            "Duan Yixuan, \u4f59\u660a\u5a01, Liangwei Hu, Zhao Chengchen, Ba He, Zhengjian Hu",
+                                            "assets\/uploads\/movies\/than-su-chung-quy-linh-gioi-dai-chien-2026.webp",
+                                            ["1","11","13"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=36"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#35</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/scotty-giai-cuu-hoang-thuong-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Scotty Giải Cứu Hoàng Thượng</strong></td>
+                                <td>Gia đình, Hoạt hình, Phiêu lưu</td>
+                                <td>80p</td>
+                                <td>02/10/2026</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            35,
+                                            "Scotty Gi\u1ea3i C\u1ee9u Ho\u00e0ng Th\u01b0\u1ee3ng",
+                                            "M\u00e8o hoang Scotty v\u00e0 m\u00e8o nh\u00e0 Katie b\u1ea5t ng\u1edd tr\u1edf th\u00e0nh b\u1ea1n \u0111\u1ed3ng h\u00e0nh. Qua nh\u1eefng th\u1eed th\u00e1ch tr\u00ean \u0111\u01b0\u1eddng tr\u1edf v\u1ec1, hai ch\u00fa m\u00e8o h\u1ecdc c\u00e1ch tin t\u01b0\u1edfng nhau v\u00e0 t\u00ecm hi\u1ec3u \u00fd ngh\u0129a c\u1ee7a m\u1ed9t m\u00e1i \u1ea5m.",
+                                            80,
+                                            "2026-10-02",
+                                            "https:\/\/www.youtube.com\/watch?v=B6z2QdwrJ8A",
+                                            2,
+                                            "Mohammad Pirzadi",
+                                            "William Hope, Stuart Milligan, Phil Cornwell, Walles Hamonde, Jay Rincon, Dario Coates",
+                                            "assets\/uploads\/movies\/scotty-giai-cuu-hoang-thuong-2026.webp",
+                                            ["10","11","12"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=35"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#34</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/quyet-cua-anh-nay-2026.webp"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Quyết Cua Anh Này</strong></td>
+                                <td>Hài, Tình cảm</td>
+                                <td>115p</td>
+                                <td>02/10/2026</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            34,
+                                            "Quy\u1ebft Cua Anh N\u00e0y",
+                                            "Henry m\u1ea5t k\u00fd \u1ee9c v\u1ec1 ng\u00e0y h\u00f4m tr\u01b0\u1edbc m\u1ed7i khi th\u1ee9c d\u1eady. Lucy ph\u1ea3i t\u00ecm c\u00e1ch l\u00e0m quen v\u1edbi anh m\u1ed7i ng\u00e0y, t\u1ea1o n\u00ean m\u1ed9t chuy\u1ec7n t\u00ecnh v\u1eeba h\u00e0i h\u01b0\u1edbc v\u1eeba \u0111\u1ea7y th\u1eed th\u00e1ch.",
+                                            115,
+                                            "2026-10-02",
+                                            "https:\/\/www.youtube.com\/watch?v=XKdEiTx9W68",
+                                            2,
+                                            "Mez Tharatorn",
+                                            "Nadech Kugimiya, Minnie, Kiat Kitjaroen, Arthit Somnoi, Tipargon Chaiprasit",
+                                            "assets\/uploads\/movies\/quyet-cua-anh-nay-2026.webp",
+                                            ["2","9"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=34"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#33</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/movie_1791800149_7394.jpg"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Tee Yod: Quỷ Ăn Tạng Phần 3</strong></td>
+                                <td>Kinh dị, Tình cảm</td>
+                                <td>104p</td>
+                                <td>09/10/2026</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            33,
+                                            "Tee Yod: Qu\u1ef7 \u0102n T\u1ea1ng Ph\u1ea7n 3",
+                                            "Yak c\u00f9ng gia \u0111\u00ecnh \u0111\u1ed1i m\u1eb7t v\u1edbi hi\u1ec3m h\u1ecda m\u1edbi khi c\u00f4 em \u00fat Yee b\u1ea5t ng\u1edd m\u1ea5t t\u00edch. \u0110\u1ec3 gi\u1ea3i c\u1ee9u em g\u00e1i, Yak v\u00e0 nh\u1eefng ng\u01b0\u1eddi th\u00e2n ph\u1ea3i ti\u1ebfn v\u00e0o khu r\u1eebng ma \u00e1m Bong Sa Noh Bian, n\u01a1i \u1ea9n ch\u1ee9a nh\u1eefng linh h\u1ed3n t\u00e0 \u00e1c v\u00e0 b\u00ed m\u1eadt kinh ho\u00e0ng.",
+                                            104,
+                                            "2026-10-09",
+                                            "https:\/\/youtu.be\/Wm0AXRUqNBE?si=fuV2tk63dU0PfI3m",
+                                            2,
+                                            "Narit Yuvaboon",
+                                            "Nadech Kugimiya, Denise Jelilcha Kapaun, Mim Rattawadee Wongthong, Junior Kajbhunditt Jaidee",
+                                            "assets\/uploads\/movies\/movie_1791800149_7394.jpg",
+                                            ["2","3"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=33"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#32</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/quy-nhap-trang-2.jpg"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Quỷ Nhập Tràng 2</strong></td>
+                                <td>Tình cảm</td>
+                                <td>95p</td>
+                                <td>18/03/2026</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            32,
+                                            "Qu\u1ef7 Nh\u1eadp Tr\u00e0ng 2",
+                                            "Ti\u1ebfp n\u1ed1i ph\u1ea7n tr\u01b0\u1edbc, b\u1ed9 phim khai th\u00e1c nh\u1eefng hi\u1ec7n t\u01b0\u1ee3ng k\u1ef3 b\u00ed v\u00e0 y\u1ebfu t\u1ed1 kinh d\u1ecb t\u00e2m linh.",
+                                            95,
+                                            "2026-03-18",
+                                            "https:\/\/www.youtube.com\/watch?v=VCI9XTxlQxk",
+                                            2,
+                                            "Tr\u1ea5n Th\u00e0nh",
+                                            "Hari Won",
+                                            "assets\/uploads\/movies\/quy-nhap-trang-2.jpg",
+                                            ["2"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=32"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#31</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/dem-ngay-xa-me.jpg"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Đêm Ngày Xa Mẹ</strong></td>
+                                <td>Kinh dị</td>
+                                <td>100p</td>
+                                <td>15/10/2026</td>
+                                <td>
+                                    <span class="badge badge-warning">Sắp chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            31,
+                                            "\u0110\u00eam Ng\u00e0y Xa M\u1eb9",
+                                            "B\u1ed9 phim xoay quanh c\u00e2u chuy\u1ec7n gia \u0111\u00ecnh v\u00e0 t\u00ecnh c\u1ea3m m\u1eb9 con v\u1edbi nhi\u1ec1u c\u1ea3m x\u00fac s\u00e2u l\u1eafng.",
+                                            100,
+                                            "2026-10-15",
+                                            "https:\/\/www.youtube.com\/watch?v=_3gQeYHoGhE",
+                                            1,
+                                            "Tr\u1ea5n Th\u00e0nh",
+                                            "Hari Won",
+                                            "assets\/uploads\/movies\/dem-ngay-xa-me.jpg",
+                                            ["3"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=31"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#30</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/avatar-way-of-water.jpg"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Avatar: The Way of Water</strong></td>
+                                <td>Tình cảm</td>
+                                <td>192p</td>
+                                <td>15/03/2026</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            30,
+                                            "Avatar: The Way of Water",
+                                            "L\u1ea5y b\u1ed1i c\u1ea3nh h\u01a1n 10 n\u0103m sau ph\u1ea7n \u0111\u1ea7u, phim k\u1ec3 v\u1ec1 gia \u0111\u00ecnh Jake Sully v\u00e0 nh\u1eefng th\u1eed th\u00e1ch h\u1ecd ph\u1ea3i \u0111\u1ed1i m\u1eb7t \u0111\u1ec3 b\u1ea3o v\u1ec7 nhau.",
+                                            192,
+                                            "2026-03-15",
+                                            "https:\/\/www.youtube.com\/watch?v=d9MyW72ELq0",
+                                            2,
+                                            "James Cameron",
+                                            "Sam Worthington, Zoe Salda\u00f1a, Sigourney Weaver, Stephen Lang",
+                                            "assets\/uploads\/movies\/avatar-way-of-water.jpg",
+                                            ["2"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=30"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#29</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/avatar-fire-and-ash.jpg"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>AVATA 3 (LỬA VÀ TRO TÀN)</strong></td>
+                                <td>Hành động</td>
+                                <td>195p</td>
+                                <td>01/03/2026</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            29,
+                                            "AVATA 3 (L\u1eecA V\u00c0 TRO T\u00c0N)",
+                                            "Sau cu\u1ed9c chi\u1ebfn t\u00e0n kh\u1ed1c v\u1edbi RDA v\u00e0 n\u1ed7i m\u1ea5t m\u00e1t l\u1edbn, gia \u0111\u00ecnh Sully ti\u1ebfp t\u1ee5c \u0111\u1ed1i m\u1eb7t v\u1edbi nh\u1eefng hi\u1ec3m h\u1ecda m\u1edbi tr\u00ean Pandora.",
+                                            195,
+                                            "2026-03-01",
+                                            "https:\/\/youtu.be\/GatNL0mmQGc?si=QbhgLzJ2PfR8YEbp",
+                                            2,
+                                            "James Cameron",
+                                            "Sam Worthington, Zoe Salda\u00f1a",
+                                            "assets\/uploads\/movies\/avatar-fire-and-ash.jpg",
+                                            ["1"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=29"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#2</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/your-name.jpg"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Your Name</strong></td>
+                                <td>Tình cảm</td>
+                                <td>110p</td>
+                                <td>26/08/2016</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            2,
+                                            "Your Name",
+                                            "Anime t\u00ecnh c\u1ea3m",
+                                            110,
+                                            "2016-08-26",
+                                            "",
+                                            2,
+                                            "",
+                                            "",
+                                            "assets\/uploads\/movies\/your-name.jpg",
+                                            ["2"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=2"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                                <tr>
+                                <td>#1</td>
+                                <td>
+                                                                            <img
+                                            src="/cinemax/cinemax/public/assets/uploads/movies/avengers-endgame.jpg"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';"
+                                            style="width:50px;height:75px;object-fit:cover;border-radius:4px;">
+                                        <span style="display:none;color:#888;">Chưa có poster</span>
+                                                                    </td>
+                                <td><strong>Avengers: Endgame</strong></td>
+                                <td>Hành động</td>
+                                <td>180p</td>
+                                <td>26/04/2019</td>
+                                <td>
+                                    <span class="badge badge-success">Đang chiếu</span>
+                                </td>
+                                <td>
+                                    <button
+                                        type="button"
+                                        class="btn-action"
+                                        onclick='openEditMovieModal(
+                                            1,
+                                            "Avengers: Endgame",
+                                            "Si\u00eau anh h\u00f9ng Marvel",
+                                            180,
+                                            "2019-04-26",
+                                            "",
+                                            2,
+                                            "",
+                                            "",
+                                            "assets\/uploads\/movies\/avengers-endgame.jpg",
+                                            ["1"]                                        )'>
+                                        Sửa
+                                    </button>
+
+                                    <form method="POST"
+                                          action="index.php?page=movies&action=delete&id=1"
+                                          style="display:inline;">
+                                        <button type="submit"
+                                                class="btn-action danger"
+                                                onclick="return confirm('Xóa phim này?')">
+                                            Xóa
+                                        </button>
+                                    </form>
+                                                                    </td>
+                            </tr>
+                                                                </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="addMovieModal" class="modal movie-modal">
+        <div class="modal-content movie-modal-content">
+            <div class="modal-header">
+                <h2>Thêm phim mới</h2>
+                <button type="button" class="btn-close" onclick="closeModal('addMovieModal')">&times;</button>
+            </div>
+
+            <form method="POST"
+                  action="index.php?page=movies&action=create"
+                  enctype="multipart/form-data"
+                  onsubmit="return validateMovieForm(this, false)">
+                <div class="modal-body">
+
+                    <div class="movie-form-grid">
+                        <div>
+                            <div class="form-group">
+                                <label>Tên phim <span style="color:red">*</span></label>
+                                <input type="text" name="title" required maxlength="255">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Đạo diễn <span style="color:red">*</span></label>
+                                <input type="text" name="director" required placeholder="Nhập tên đạo diễn">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Tên diễn viên <span style="color:red">*</span></label>
+                                <input type="text" name="actors" required placeholder="VD: Trấn Thành, Sam Worthington">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Thể loại <span style="color:red">*</span></label>
+                                <div class="genre-grid" style="max-height:160px;overflow:auto;border:1px solid #444;padding:10px;border-radius:8px;">
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="15">
+                                            Bí ẩn                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="8">
+                                            Bom Tấn                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="13">
+                                            Giả tưởng                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="12">
+                                            Gia đình                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="16">
+                                            Giật gân                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="9">
+                                            Hài                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="1">
+                                            Hành động                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="11">
+                                            Hoạt hình                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="17">
+                                            Khoa học viễn tưởng                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="4">
+                                            Kịch Hài                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="3">
+                                            Kinh dị                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="10">
+                                            Phiêu lưu                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="6">
+                                            Phim Hài                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="14">
+                                            Tâm lý                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="2">
+                                            Tình cảm                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" name="genre_ids[]" value="7">
+                                            Viễn Tưởng Khoa Học                                        </label>
+                                                                    </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="form-group">
+                                <label>Poster <span style="color:red">*</span></label>
+
+                                <div class="movie-poster-field">
+                                    <img
+                                        id="addPosterPreview"
+                                        src=""
+                                        alt="Preview Poster"
+                                        onerror="this.style.display='none';"
+                                        style="display:none;width:90px;height:130px;object-fit:cover;border-radius:8px;border:1px solid #444;">
+
+                                    <div class="movie-poster-control">
+                                        <input
+                                            type="file"
+                                            name="poster"
+                                            accept="image/*"
+                                            required
+                                            onchange="previewPoster(this, 'addPosterPreview')">
+
+                                        <small style="display:block;margin-top:8px;color:#aaa;">
+                                            Bắt buộc chọn file jpg, jpeg, png, webp
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Link Trailer</label>
+                                <input type="url" name="trailer_url" placeholder="https://youtube.com/...">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Mô tả</label>
+                                <textarea name="description" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="movie-form-row">
+                        <div class="form-group">
+                            <label>Thời lượng (phút) <span style="color:red">*</span></label>
+                            <input type="number" name="duration_min" min="1" max="500" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Trạng thái <span style="color:red">*</span></label>
+                            <select name="status" required>
+                            <option value="1">Sắp chiếu</option>
+                            <option value="2">Đang chiếu</option>
+                            <option value="3">Ngừng chiếu</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ngày chiếu <span style="color:red">*</span></label>
+                            <input type="date"
+                                   name="release_date"
+                                   required
+                                   min="1900-01-01"
+                                   max="2100-12-31"
+                                   onclick="this.showPicker && this.showPicker()">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn-action" onclick="closeModal('addMovieModal')">Hủy</button>
+                    <button type="submit" class="btn-primary">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="editMovieModal" class="modal movie-modal">
+        <div class="modal-content movie-modal-content">
+            <div class="modal-header">
+                <h2>Sửa phim</h2>
+                <button type="button" class="btn-close" onclick="closeModal('editMovieModal')">&times;</button>
+            </div>
+
+            <form method="POST"
+                  action="index.php?page=movies&action=update"
+                  enctype="multipart/form-data"
+                  onsubmit="return validateMovieForm(this, true)">
+                <input type="hidden" name="movie_id" id="edit_movie_id">
+                <input type="hidden" name="existing_poster_url" id="edit_existing_poster_url">
+
+                <div class="modal-body">
+
+                    <div class="movie-form-grid">
+                        <div>
+                            <div class="form-group">
+                                <label>Tên phim <span style="color:red">*</span></label>
+                                <input type="text" name="title" id="edit_title" required maxlength="255">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Đạo diễn <span style="color:red">*</span></label>
+                                <input type="text" name="director" id="edit_director" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Tên diễn viên <span style="color:red">*</span></label>
+                                <input type="text" name="actors" id="edit_actors" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Thể loại <span style="color:red">*</span></label>
+                                <div class="genre-grid" style="max-height:160px;overflow:auto;border:1px solid #444;padding:10px;border-radius:8px;">
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="15">
+                                            Bí ẩn                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="8">
+                                            Bom Tấn                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="13">
+                                            Giả tưởng                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="12">
+                                            Gia đình                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="16">
+                                            Giật gân                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="9">
+                                            Hài                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="1">
+                                            Hành động                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="11">
+                                            Hoạt hình                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="17">
+                                            Khoa học viễn tưởng                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="4">
+                                            Kịch Hài                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="3">
+                                            Kinh dị                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="10">
+                                            Phiêu lưu                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="6">
+                                            Phim Hài                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="14">
+                                            Tâm lý                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="2">
+                                            Tình cảm                                        </label>
+                                                                            <label class="checkbox-item" style="display:inline-block;min-width:140px;margin-bottom:8px;">
+                                            <input type="checkbox" class="edit_genre_checkbox" name="genre_ids[]" value="7">
+                                            Viễn Tưởng Khoa Học                                        </label>
+                                                                    </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="form-group">
+                                <label>Đổi poster</label>
+
+                                <div class="movie-poster-field">
+                                    <img
+                                        id="editPosterPreview"
+                                        src=""
+                                        alt="Preview Poster"
+                                        onerror="this.style.display='none';"
+                                        style="display:none;width:90px;height:130px;object-fit:cover;border-radius:8px;border:1px solid #444;">
+
+                                    <div class="movie-poster-control">
+                                        <input
+                                            type="file"
+                                            name="poster"
+                                            accept="image/*"
+                                            onchange="previewPoster(this, 'editPosterPreview')">
+
+                                        <small style="display:block;margin-top:8px;color:#aaa;">
+                                            Không chọn ảnh mới thì giữ poster cũ
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Link Trailer</label>
+                                <input type="url" name="trailer_url" id="edit_trailer_url" placeholder="https://youtube.com/...">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Mô tả</label>
+                                <textarea name="description" id="edit_description" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="movie-form-row">
+                        <div class="form-group">
+                            <label>Thời lượng (phút) <span style="color:red">*</span></label>
+                            <input type="number" name="duration_min" id="edit_duration_min" min="1" max="500" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Trạng thái <span style="color:red">*</span></label>
+                            <select name="status" id="edit_status" required>
+                               <option value="1">Sắp chiếu</option>
+                                <option value="2">Đang chiếu</option>
+                                <option value="3">Ngừng chiếu</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ngày chiếu <span style="color:red">*</span></label>
+                            <input type="date"
+                                   name="release_date"
+                                   id="edit_release_date"
+                                   required
+                                   min="1900-01-01"
+                                   max="2100-12-31"
+                                   onclick="this.showPicker && this.showPicker()">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn-action" onclick="closeModal('editMovieModal')">Hủy</button>
+                    <button type="submit" class="btn-primary">Cập nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+<script>
+function previewPoster(input, previewId) {
+    const preview = document.getElementById(previewId);
+
+    if (!input.files || !input.files[0]) {
+        preview.src = '';
+        preview.style.display = 'none';
+        return;
+    }
+
+    const file = input.files[0];
+
+    if (!file.type.startsWith('image/')) {
+        alert('Vui lòng chọn file ảnh hợp lệ.');
+        input.value = '';
+        preview.src = '';
+        preview.style.display = 'none';
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        preview.src = e.target.result;
+        preview.style.display = 'block';
+    };
+    reader.readAsDataURL(file);
+}
+
+function openAddMovieModal() {
+    const form = document.querySelector('#addMovieModal form');
+    if (form) form.reset();
+
+    const addPreview = document.getElementById('addPosterPreview');
+    addPreview.src = '';
+    addPreview.style.display = 'none';
+
+    const genreCheckboxes = document.querySelectorAll('#addMovieModal input[name="genre_ids[]"]');
+    genreCheckboxes.forEach(cb => cb.checked = false);
+
+    openModal('addMovieModal');
+}
+
+function openEditMovieModal(id, title, description, durationMin, releaseDate, trailerUrl, status, director, actors, posterUrl, genreIds) {
+    document.getElementById('edit_movie_id').value = id;
+    document.getElementById('edit_title').value = title ?? '';
+    document.getElementById('edit_description').value = description ?? '';
+    document.getElementById('edit_duration_min').value = durationMin ?? '';
+    document.getElementById('edit_director').value = director ?? '';
+    document.getElementById('edit_actors').value = actors ?? '';
+    document.getElementById('edit_trailer_url').value = trailerUrl ?? '';
+    document.getElementById('edit_status').value = status ?? '';
+    document.getElementById('edit_existing_poster_url').value = posterUrl ?? '';
+
+    let normalizedDate = '';
+    if (releaseDate && typeof releaseDate === 'string') {
+        if (/^\d{4}-\d{2}-\d{2}$/.test(releaseDate)) {
+            normalizedDate = releaseDate;
+        } else {
+            const d = new Date(releaseDate);
+            if (!isNaN(d.getTime())) {
+                const yyyy = d.getFullYear();
+                const mm = String(d.getMonth() + 1).padStart(2, '0');
+                const dd = String(d.getDate()).padStart(2, '0');
+                normalizedDate = `${yyyy}-${mm}-${dd}`;
+            }
+        }
+    }
+    document.getElementById('edit_release_date').value = normalizedDate;
+
+    const editPreview = document.getElementById('editPosterPreview');
+    let previewSrc = '';
+
+    if (posterUrl && String(posterUrl).trim() !== '') {
+        if (
+            posterUrl.startsWith('http://') ||
+            posterUrl.startsWith('https://') ||
+            posterUrl.startsWith('/')
+        ) {
+            previewSrc = buildPosterJsPath(posterUrl);
+        } else {
+            previewSrc = buildPosterJsPath(posterUrl);
+        }
+    }
+
+    if (previewSrc !== '') {
+        editPreview.src = previewSrc;
+        editPreview.style.display = 'block';
+    } else {
+        editPreview.src = '';
+        editPreview.style.display = 'none';
+    }
+
+    const checkboxes = document.querySelectorAll('.edit_genre_checkbox');
+    const normalizedGenres = Array.isArray(genreIds) ? genreIds.map(String) : [];
+
+    checkboxes.forEach(cb => {
+        cb.checked = normalizedGenres.includes(String(cb.value));
+    });
+
+    openModal('editMovieModal');
+}
+
+function buildPosterJsPath(posterUrl) {
+    if (!posterUrl) return '';
+
+    if (/^https?:\/\//i.test(posterUrl)) return posterUrl;
+
+    if (posterUrl.startsWith('/public/')) {
+        return '/cinemax/cinemax' + posterUrl;
+    }
+
+    if (posterUrl.startsWith('/')) {
+        return '/cinemax/cinemax' + posterUrl;
+    }
+
+    return '/cinemax/cinemax/public/' + posterUrl.replace(/^\/+/, '');
+}
+
+function validateMovieForm(form, isEdit = false) {
+    const title = form.querySelector('[name="title"]').value.trim();
+    const director = form.querySelector('[name="director"]').value.trim();
+    const actors = form.querySelector('[name="actors"]').value.trim();
+    const duration = form.querySelector('[name="duration_min"]').value;
+    const releaseDate = form.querySelector('[name="release_date"]').value;
+    const trailerUrlInput = form.querySelector('[name="trailer_url"]');
+    const trailerUrl = trailerUrlInput ? trailerUrlInput.value.trim() : '';
+    const statusInput = form.querySelector('[name="status"]');
+    const status = statusInput ? statusInput.value : '';
+    const genreCheckboxes = form.querySelectorAll('[name="genre_ids[]"]:checked');
+    const posterInput = form.querySelector('[name="poster"]');
+
+    if (title === '') {
+        alert('Tên phim không được để trống.');
+        return false;
+    }
+
+    if (title.length > 255) {
+        alert('Tên phim không được vượt quá 255 ký tự.');
+        return false;
+    }
+
+    if (director === '') {
+        alert('Vui lòng nhập tên đạo diễn.');
+        return false;
+    }
+
+    if (director.length > 255) {
+        alert('Tên đạo diễn quá dài.');
+        return false;
+    }
+
+    if (actors === '') {
+        alert('Vui lòng nhập tên diễn viên.');
+        return false;
+    }
+
+    if (!duration || isNaN(duration) || parseInt(duration) <= 0) {
+        alert('Thời lượng phim không hợp lệ.');
+        return false;
+    }
+
+    if (!status || !['1', '2', '3'].includes(status)) {
+    alert('Vui lòng chọn trạng thái phim.');
+    return false;
+}
+
+    if (genreCheckboxes.length === 0) {
+        alert('Vui lòng chọn ít nhất 1 thể loại.');
+        return false;
+    }
+
+    if (!releaseDate) {
+        alert('Vui lòng chọn ngày chiếu.');
+        return false;
+    }
+
+    const minDate = '1900-01-01';
+    const maxDate = '2100-12-31';
+
+    if (releaseDate < minDate || releaseDate > maxDate) {
+        alert('Ngày chiếu phải nằm trong khoảng từ 1900-01-01 đến 2100-12-31.');
+        return false;
+    }
+
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+    const todayStr = `${yyyy}-${mm}-${dd}`;
+
+   if (status === '1' && releaseDate <= todayStr) {
+    alert('Phim "Sắp chiếu" phải có ngày chiếu sau hôm nay.');
+    return false;
+}
+
+if (status === '2' && releaseDate > todayStr) {
+    alert('Phim "Đang chiếu" không thể có ngày chiếu ở tương lai.');
+    return false;
+}
+
+    if (trailerUrl !== '') {
+        try {
+            new URL(trailerUrl);
+        } catch (e) {
+            alert('Link trailer không đúng định dạng URL.');
+            return false;
+        }
+    }
+
+    if (!isEdit) {
+        if (!posterInput || !posterInput.files || !posterInput.files[0]) {
+            alert('Vui lòng tải poster cho phim.');
+            return false;
+        }
+    }
+
+    return true;
+}
+</script>

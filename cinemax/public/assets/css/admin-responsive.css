@@ -1,0 +1,106 @@
+/* Shared admin components. Wide data stays in its own scroll container. */
+body.admin-shell { overflow-x: visible; }
+.admin-shell input, .admin-shell select, .admin-shell textarea { font-family: inherit; font-size: 14px; }
+.admin-shell .admin-layout { width: 100%; min-width: 0; }
+.admin-shell .admin-main { width: 100%; min-width: 0; }
+.admin-shell .admin-main > section { min-width: 0; max-width: 100%; }
+.admin-shell .admin-sidebar .nav-item { min-width: 0; overflow-wrap: anywhere; }
+.admin-shell .admin-sidebar .nav-item i,
+.admin-shell .admin-sidebar .nav-item svg { flex-shrink: 0; }
+.admin-shell .admin-header {
+  padding: clamp(16px, 2vw, 28px);
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.admin-shell .admin-header h1 { font-size: clamp(20px, 2vw, 28px); overflow-wrap: anywhere; }
+.admin-shell .admin-header > div,
+.admin-shell .header-actions { min-width: 0; max-width: 100%; flex-wrap: wrap; gap: 12px; }
+.admin-shell .header-actions { display: flex; }
+.admin-shell .btn-add,
+.admin-shell .btn-action,
+.admin-shell .btn-primary,
+.admin-shell .btn-secondary { max-width: 100%; justify-content: center; overflow-wrap: anywhere; }
+.admin-shell button > svg { flex-shrink: 0; }
+.admin-shell .dashboard-content { width: 100%; min-width: 0; padding: clamp(16px, 2vw, 32px); }
+.admin-shell .dashboard-card { min-width: 0; max-width: 100%; padding: clamp(14px, 1.8vw, 24px); }
+.admin-shell .card-header { gap: 12px; flex-wrap: wrap; }
+.admin-shell .card-header h3 { min-width: 0; overflow-wrap: anywhere; }
+.admin-shell .stats-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.admin-shell .stat-card { min-width: 0; padding: 18px; gap: 12px; }
+.admin-shell .stat-icon { width: 44px; height: 44px; }
+.admin-shell .stat-info { min-width: 0; }
+.admin-shell .stat-value { font-size: clamp(20px, 1.8vw, 28px); overflow-wrap: anywhere; }
+.admin-shell .stat-label { font-size: 13px; line-height: 1.5; }
+.admin-shell .filter-bar,
+.admin-shell .search-form { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; min-width: 0; max-width: 100%; }
+.admin-shell .filter-bar { margin-bottom: 20px; }
+.admin-shell .filter-bar > :not([type="hidden"]),
+.admin-shell .search-form > :not([type="hidden"]) { min-width: 0; max-width: 100%; }
+.admin-shell .filter-bar input:not([type="hidden"]),
+.admin-shell .search-form input:not([type="hidden"]) { flex: 1 1 200px; }
+.admin-shell .table-responsive { width: 100%; min-width: 0; max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; }
+.admin-shell .data-table,
+.admin-shell .permission-matrix { width: 100%; }
+.admin-shell .data-table th,
+.admin-shell .permission-matrix th { white-space: nowrap; }
+.admin-shell .data-table td { overflow-wrap: break-word; }
+.admin-shell .pagination { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; max-width: 100%; margin-top: 20px; }
+.admin-shell .page-link { padding: 8px 12px; border: 1px solid var(--border-color); border-radius: 4px; color: var(--text-primary); text-decoration: none; }
+.admin-shell .page-link.active { background: var(--primary-color); border-color: var(--primary-color); }
+.admin-shell .pagination-info,
+.admin-shell .pagination-page-info { overflow-wrap: anywhere; }
+.admin-shell .modal { --modal-padding: clamp(12px, 3vw, 40px); padding: var(--modal-padding); z-index: 1300; overflow-y: auto; }
+.admin-shell .modal.active { align-items: flex-start; justify-content: center; }
+.admin-shell .modal .modal-content {
+  width: 100%;
+  max-width: 600px;
+  min-width: 0;
+  margin: auto;
+  padding: 0;
+  max-height: calc(100vh - 2 * var(--modal-padding));
+  max-height: calc(100dvh - 2 * var(--modal-padding));
+  overflow-y: auto;
+}
+.admin-shell .modal .movie-modal-content { max-width: 1000px; }
+.admin-shell .modal-header,
+.admin-shell .modal-body,
+.admin-shell .modal-footer { padding: clamp(14px, 2vw, 24px); min-width: 0; }
+.admin-shell .modal-header { gap: 12px; }
+.admin-shell .modal-header h2 { font-size: clamp(18px, 2vw, 24px); min-width: 0; overflow-wrap: anywhere; }
+.admin-shell .modal-header .btn-close { flex-shrink: 0; }
+.admin-shell .modal-footer { flex-wrap: wrap; }
+.admin-shell .modal .form-group { min-width: 0; overflow-wrap: anywhere; }
+.admin-shell .modal input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
+.admin-shell .modal select,
+.admin-shell .modal textarea { min-width: 0; max-width: 100%; }
+.admin-shell .modal-body { overflow-wrap: anywhere; }
+.admin-shell .seats .legend { flex-wrap: wrap; gap: 12px; }
+.admin-shell .seats .legend-item { min-width: 0; }
+.admin-shell .seats .dot { flex-shrink: 0; }
+.admin-shell .seats .editor-area { width: 100%; min-width: 0; max-width: 100%; }
+.admin-shell .seats .seat-grid { display: block; width: max-content; margin-inline: auto; }
+.admin-shell .seats .seat-item,
+.admin-shell .seats .seat-empty,
+.admin-shell .seats .row-label { flex-shrink: 0; }
+.admin-shell .err404 { min-width: 0; padding: 16px; }
+.admin-shell .err404-main { min-width: 0; padding: clamp(20px, 4vw, 64px); gap: clamp(20px, 4vw, 80px); }
+.admin-shell .err404-ticket { max-width: 100%; min-width: 0; }
+.admin-shell .err404-ticket > svg { display: block; width: 100%; height: auto; }
+.admin-shell .dashboard-chart canvas { max-width: 100%; }
+.admin-shell .chart-unavailable { color: var(--text-secondary); padding: 24px 0; line-height: 1.6; }
+.admin-shell .dashboard-content .dashboard-chart-unavailable { height: auto; }
+@media (max-width: 1399px) {
+  .admin-shell .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  .admin-shell .admin-header { position: static; }
+  .admin-shell .header-actions { width: 100%; }
+  .admin-shell .stats-grid { grid-template-columns: minmax(0, 1fr); }
+  .admin-shell .modal-footer > button { flex: 1 1 100px; }
+  .admin-shell .movie-modal .genre-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 430px) {
+  .admin-shell .filter-bar > :not([type="hidden"]),
+  .admin-shell .search-form > :not([type="hidden"]) { width: 100%; flex-basis: 100%; }
+  .admin-shell .header-actions > .btn-add { width: 100%; }
+}

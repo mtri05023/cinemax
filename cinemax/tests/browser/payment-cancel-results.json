@@ -1,0 +1,19 @@
+{
+  "passed": 14,
+  "checks": [
+    "Dismissing confirmation keeps the payment and held seats",
+    "GET cannot cancel checkout",
+    "Invalid CSRF does not release seats",
+    "Another customer cannot cancel the checkout",
+    "Cancel button fits 320px",
+    "Cancel button fits 375px",
+    "Cancel button fits 430px",
+    "Cancel button fits 768px",
+    "Cancel button fits 1280px",
+    "Accepting cancellation releases seats immediately and returns to seat selection",
+    "Cancelled payment cannot be reopened from stale session",
+    "Another browser sees the cancelled seat as available",
+    "Another customer can reserve the released seat",
+    "Payment cancellation has no browser JavaScript errors"
+  ]
+}

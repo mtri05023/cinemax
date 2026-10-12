@@ -1,0 +1,9 @@
+cinemax/tests/browser/node_modules/
+cinemax/tests/browser/fixture.json
+cinemax/tests/*.gate
+
+**/.git-backup/
+**/.env
+
+**/.git-backup/
+**/.env

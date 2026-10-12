@@ -1,0 +1,8 @@
+{
+    "http_posters_200_and_valid": 20,
+    "movie_detail_pages_200": 13,
+    "trailer_iframes_correct": 13,
+    "user_list_and_home_pages_200": 3,
+    "browser_playback": "Not tested: no interactive browser available.",
+    "admin_template": "Verified separately; authenticated browser editing\/upload not tested."
+}

@@ -1,0 +1,24 @@
+{
+  "passed": 19,
+  "checks": [
+    "a: promotion page filters welcome code by purchase history",
+    "a: general eligible code remains visible",
+    "b: promotion page filters welcome code by purchase history",
+    "b: general eligible code remains visible",
+    "New member can choose welcome or general promotion",
+    "Existing member only sees eligible general promotions",
+    "Order below minimum excludes the code for both customers",
+    "Choosing a promotion applies it to the checkout form",
+    "Welcome promotion computes the discounted total",
+    "Changing promotion replaces rather than stacks the discount",
+    "Clearing promotion restores the original total",
+    "Manual entry cannot apply welcome code for an existing member",
+    "Existing member can apply their eligible general code",
+    "Promotion cards fit 320px",
+    "Promotion cards fit 375px",
+    "Promotion cards fit 430px",
+    "Promotion cards fit 768px",
+    "Promotion cards fit 1280px",
+    "Promotion choice has no browser JavaScript errors"
+  ]
+}

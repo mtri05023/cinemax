@@ -1,0 +1,118 @@
+.schedule-page{--line:var(--border-color);--muted:var(--text-secondary);color:var(--text-primary);min-width:0}.schedule-page [hidden]{display:none!important}.schedule-page .schedule-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:28px}.schedule-page .schedule-eyebrow{color:var(--primary-color);font-size:11px;letter-spacing:2px;font-weight:700}.schedule-page h1{font-size:30px;margin:9px 0}.schedule-page h2{font-size:21px;margin:0}.schedule-page .schedule-description,.schedule-page .schedule-heading p{color:var(--muted);font-size:14px;margin:10px 0 22px;line-height:1.6}.schedule-page .schedule-total{padding:12px 18px;border:1px solid var(--line);border-radius:12px;white-space:nowrap;background:var(--bg-tertiary);font-size:14px}.schedule-page .schedule-overview,.schedule-page .theater-select,.schedule-page .calendar-wrapper{padding:26px;border:1px solid var(--line);border-radius:12px;background:var(--bg-secondary);margin:0 0 24px;text-align:left}.schedule-page .filter-bar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}.schedule-page input,.schedule-page select{border:1px solid var(--border-color);border-radius:9px;background:var(--bg-tertiary);color:var(--text-primary);padding:11px 13px;font:inherit;color-scheme:dark}.schedule-page #overviewSearch{flex:1;min-width:200px}.schedule-page input:focus,.schedule-page select:focus{outline:2px solid var(--primary-color);outline-offset:2px}.schedule-page button{font:inherit;cursor:pointer;transition:background .18s,border-color .18s}.schedule-page .btn-action,.schedule-page .btn-back,.schedule-page .nav-btn,.schedule-page .view-btn{border:1px solid var(--border-color);border-radius:9px;background:var(--bg-tertiary);color:var(--text-primary);padding:10px 14px;white-space:nowrap}.schedule-page .btn-action:hover,.schedule-page .nav-btn:hover,.schedule-page .btn-back:hover{background:var(--border-color);border-color:var(--primary-color)}.schedule-page .table-responsive{overflow:auto}.schedule-page .data-table{width:100%;border-collapse:collapse;min-width:760px}.schedule-page .data-table th{background:var(--bg-tertiary);color:var(--text-secondary);font-size:12px;text-transform:uppercase;text-align:left;padding:15px}.schedule-page .data-table td{padding:17px 15px;font-size:13px;border-bottom:1px solid var(--border-color)}.schedule-page .data-table td:first-child{min-width:180px;max-width:300px}.schedule-page .data-table tr:hover td{background:var(--bg-tertiary)}.schedule-page .data-table .btn-action{font-size:12px}.schedule-page .schedule-status{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;border-radius:20px;padding:6px 10px;white-space:nowrap}.schedule-page .schedule-status:before{content:'';width:6px;height:6px;background:currentColor;border-radius:50%}.schedule-page .status-active{color:var(--success-color);background:rgba(70, 211, 105, 0.12)}.schedule-page .status-draft{color:var(--warning-color);background:rgba(255, 165, 0, 0.12)}.schedule-page .status-finished{color:var(--text-secondary);background:var(--bg-tertiary)}.schedule-page .theater-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.schedule-page .theater-btn{display:flex;flex-direction:column;gap:16px;padding:22px;color:var(--text-primary);background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:12px;text-align:left}.schedule-page .theater-btn:hover{border-color:var(--primary-color);background:var(--bg-tertiary)}.schedule-page .cinema-card-top,.schedule-page .cinema-card-footer{display:flex;justify-content:space-between;align-items:center;gap:10px}.schedule-page .cinema-card-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;color:var(--primary-color);background:rgba(229, 9, 20, 0.1);font-size:25px}.schedule-page .theater-btn strong{font-size:18px;line-height:1.4}.schedule-page .cinema-address{font-size:13px;color:var(--muted);line-height:1.5}.schedule-page .cinema-card-footer{border-top:1px solid var(--border-color);padding-top:16px;margin-top:auto;font-size:12px;color:var(--muted)}.schedule-page .cinema-card-footer span:last-child{color:var(--primary-color);font-weight:700}.schedule-page .calendar-wrapper{display:none}.schedule-page .theater-name{font-size:24px;font-weight:700;margin-bottom:22px}.schedule-page .schedule-toolbar{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.schedule-page .toolbar-center,.schedule-page .toolbar-right{display:flex;align-items:center;gap:8px}.schedule-page #currentDate{font-size:16px;min-width:220px;text-align:center}.schedule-page .view-btn.active{color:var(--text-primary);background:var(--primary-color);border-color:var(--primary-color)}.schedule-page .schedule-legend{display:flex;gap:22px;flex-wrap:wrap;margin:22px 0;font-size:12px;color:var(--muted)}.schedule-page .legend-item{display:flex;align-items:center;gap:8px}.schedule-page .legend-color{width:9px;height:9px;border-radius:50%}.schedule-page .legend-color.draft{background:var(--warning-color)}.schedule-page .legend-color.active{background:var(--success-color)}.schedule-page .legend-color.finished{background:var(--text-secondary)}.schedule-page .calendar-date-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:15px 0;border-top:1px solid var(--line)}.schedule-page .calendar-date-controls label{font-size:13px}.schedule-page .calendar-date-controls input{margin-left:8px}.schedule-page .calendar-date-controls>span{font-size:12px;color:var(--muted);margin-left:auto}.schedule-page #calendar{overflow:auto;border:1px solid var(--line);border-radius:12px}.schedule-page .timeline{min-width:1080px}.schedule-page .time-header,.schedule-page .timeline-row{display:grid;grid-template-columns:140px repeat(8,minmax(110px,1fr))}.schedule-page .time-header,.schedule-page .week-header{background:var(--bg-tertiary);color:var(--text-secondary);font-size:12px}.schedule-page .time-header>div{padding:18px 12px;text-align:center}.schedule-page .room-label{display:flex;align-items:center;padding:16px;font-size:13px;font-weight:600;background:var(--bg-tertiary);border-top:1px solid var(--line);overflow-wrap:anywhere}.schedule-page .cell,.schedule-page .week-cell{min-height:100px;padding:6px;border-left:1px solid var(--line);border-top:1px solid var(--line);cursor:pointer}.schedule-page .cell:hover,.schedule-page .week-cell:hover{background:var(--bg-tertiary)}.schedule-page .event{position:relative;background:rgba(70, 211, 105, 0.12);border-left:3px solid var(--success-color);color:var(--text-primary);border-radius:7px;padding:10px 22px 10px 9px;margin-bottom:6px;cursor:pointer;font-size:11px;overflow-wrap:anywhere}.schedule-page .event[data-status="0"]{background:rgba(255, 165, 0, 0.12);border-color:var(--warning-color);color:var(--text-primary)}.schedule-page .event[data-status="-1"]{background:var(--bg-tertiary);border-color:var(--text-secondary);color:var(--text-secondary)}.schedule-page .event-title{font-weight:700;line-height:1.5}.schedule-page .event-time,.schedule-page .event-meta{margin-top:6px;font-size:10px;line-height:1.5;opacity:.85}.schedule-page .event-delete{position:absolute;right:3px;top:3px;background:transparent;border:0;color:inherit;padding:2px 5px;font-size:16px}.schedule-page .event-delete:hover{color:var(--danger-color)}.schedule-page .week-timeline{min-width:1100px}.schedule-page .week-header,.schedule-page .week-row{display:grid;grid-template-columns:75px repeat(7,minmax(140px,1fr))}.schedule-page .day-header{padding:14px 8px;text-align:center;border-left:1px solid var(--line)}.schedule-page .day-date{font-size:11px;color:var(--muted);margin-top:6px}.schedule-page .time-label{padding:20px 12px;font-size:12px;background:var(--bg-tertiary);border-top:1px solid var(--line)}.schedule-page .calendar-empty,.schedule-page #overviewEmpty{padding:25px;color:var(--muted);text-align:center}.schedule-page .popup{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1001;width:min(460px,calc(100vw - 32px));max-height:90vh;overflow:auto;padding:26px;background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:12px;box-shadow:0 0 0 100vmax #080910bc,0 24px 70px #0008}.schedule-page .popup h3{margin:0 0 22px;font-size:22px}.schedule-page .popup label{display:block;margin:14px 0 7px;color:var(--text-secondary);font-size:12px}.schedule-page .popup input:not([type="hidden"]),.schedule-page .popup select{width:100%;box-sizing:border-box}.schedule-page .popup input[readonly]{color:var(--text-secondary);background:var(--bg-tertiary)}.schedule-page .popup-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:24px}.schedule-page .popup-actions button{padding:11px 20px;border-radius:9px;border:1px solid var(--border-color);color:var(--text-primary);background:var(--bg-tertiary)}.schedule-page .popup-actions .btn-save{background:var(--primary-color);border-color:var(--primary-color)}
+@media(max-width:800px){.schedule-page .schedule-heading{align-items:flex-start}.schedule-page h1{font-size:25px}.schedule-page .schedule-total{font-size:12px;padding:10px}.schedule-page .schedule-overview,.schedule-page .theater-select,.schedule-page .calendar-wrapper{padding:18px}.schedule-page .toolbar-center{order:3;width:100%;justify-content:center}.schedule-page .calendar-date-controls>span{margin-left:0}}
+@media(prefers-reduced-motion:reduce){.schedule-page button{transition:none}}
+.schedule-page{padding:28px;box-sizing:border-box}@media(max-width:800px){.schedule-page{padding:16px}}
+
+/* Keep all controls inside the available space at every viewport and zoom level. */
+.schedule-page *, .schedule-page *::before, .schedule-page *::after {
+  box-sizing: border-box;
+}
+.schedule-page {
+  width: 100%;
+  max-width: 1800px;
+  margin-inline: auto;
+  padding: clamp(12px, 2.2vw, 36px);
+}
+.schedule-page .schedule-heading { flex-wrap: wrap; }
+.schedule-page .schedule-heading > div { min-width: 0; flex: 1 1 240px; }
+.schedule-page h1 { font-size: clamp(23px, 2.4vw, 32px); }
+.schedule-page h2, .schedule-page .theater-name { overflow-wrap: anywhere; }
+.schedule-page .schedule-overview,
+.schedule-page .theater-select,
+.schedule-page .calendar-wrapper {
+  min-width: 0;
+  padding: clamp(14px, 2vw, 28px);
+  box-shadow: 0 8px 28px #0002;
+}
+.schedule-page .theater-list {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+}
+.schedule-page .theater-btn { min-width: 0; padding: 20px; }
+.schedule-page .theater-btn strong,
+.schedule-page .cinema-address { overflow-wrap: anywhere; }
+.schedule-page .cinema-card-top,
+.schedule-page .cinema-card-footer { flex-wrap: wrap; }
+.schedule-page .cinema-card-icon { flex-shrink: 0; }
+.schedule-page #overviewSearch { min-width: 0; flex: 1 1 220px; }
+.schedule-page .filter-bar > * { max-width: 100%; }
+.schedule-page .table-responsive,
+.schedule-page #calendar {
+  width: 100%;
+  max-width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-color) var(--bg-secondary);
+  overscroll-behavior-inline: contain;
+}
+.schedule-page .table-responsive { border: 1px solid var(--line); border-radius: 12px; }
+.schedule-page #calendar { max-height: 70vh; max-height: 70dvh; }
+.schedule-page .time-header,
+.schedule-page .week-header { position: sticky; top: 0; z-index: 3; }
+.schedule-page .room-label,
+.schedule-page .time-label,
+.schedule-page .time-header > div:first-child,
+.schedule-page .week-header > div:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: var(--bg-tertiary);
+  box-shadow: 1px 0 var(--line);
+}
+.schedule-page .time-header > div:first-child,
+.schedule-page .week-header > div:first-child { z-index: 4; }
+.schedule-page .toolbar-center { flex: 1 1 280px; min-width: 0; justify-content: center; }
+.schedule-page #currentDate { min-width: 0; flex: 1; max-width: 320px; line-height: 1.5; }
+.schedule-page .toolbar-center .nav-btn { flex-shrink: 0; }
+.schedule-page .calendar-date-controls label { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; min-width: 0; }
+.schedule-page .calendar-date-controls input { margin-left: 0; min-width: 0; max-width: 100%; }
+.schedule-page .popup {
+  max-height: calc(100vh - 24px);
+  max-height: calc(100dvh - 24px);
+  padding: clamp(16px, 3vw, 26px);
+  z-index: 1100;
+}
+.schedule-page button:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 3px; }
+/* Use the same typography as the shared admin header, tables and forms. */
+.schedule-page { font-family: inherit; font-size: 16px; line-height: 1.6; }
+.schedule-page .schedule-total { background: var(--primary-color); border-color: var(--primary-color); color: var(--text-primary); font-weight: 600; }
+.schedule-page h1 { font-size: clamp(20px, 2vw, 28px); }
+.schedule-page h2 { font-size: 20px; }
+.schedule-page .data-table th { font-size: 14px; font-weight: 600; text-transform: none; }
+.schedule-page .data-table td { font-size: 16px; }
+.schedule-page .btn-action,
+.schedule-page .data-table .btn-action,
+.schedule-page .btn-back,
+.schedule-page .nav-btn,
+.schedule-page .view-btn,
+.schedule-page .popup-actions button { font-family: inherit; font-size: 14px; font-weight: 500; }
+.schedule-page input, .schedule-page select { font-family: inherit; font-size: 14px; }
+.schedule-page .schedule-status { font-size: 12px; }
+.schedule-page .schedule-legend,
+.schedule-page .cinema-card-footer,
+.schedule-page .calendar-date-controls label,
+.schedule-page .calendar-date-controls > span { font-size: 14px; }
+.schedule-page .cinema-address { font-size: 14px; }
+.schedule-page .room-label { font-size: 16px; }
+.schedule-page .time-header, .schedule-page .week-header,
+.schedule-page .time-label { font-size: 14px; }
+.schedule-page .day-date { font-size: 12px; }
+.schedule-page .event { font-size: 14px; }
+.schedule-page .event-time, .schedule-page .event-meta { font-size: 12px; }
+.schedule-page .popup h3 { font-size: clamp(18px, 2vw, 24px); }
+.schedule-page .popup label { font-size: 16px; font-weight: 500; }
+.schedule-page .schedule-row-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.schedule-page .btn-action.danger { color: var(--danger-color); border-color: var(--danger-color); }
+.schedule-page .popup-actions .danger { color: var(--danger-color); border-color: var(--danger-color); }
+.schedule-page .theater-btn:disabled { opacity: .55; cursor: not-allowed; }
+.schedule-page .theater-btn:disabled:hover { background: var(--bg-secondary); border-color: var(--border-color); }
+@media (max-width: 480px) {
+  .schedule-page .filter-bar > * { width: 100%; flex-basis: 100%; }
+  .schedule-page .schedule-toolbar { gap: 12px; }
+  .schedule-page .toolbar-left { flex: 1 1 100%; }
+  .schedule-page .toolbar-center { order: 2; flex-basis: 100%; }
+  .schedule-page .toolbar-right { order: 3; width: 100%; }
+  .schedule-page .toolbar-right .view-btn { flex: 1; }
+  .schedule-page .schedule-legend { gap: 12px; }
+  .schedule-page .calendar-date-controls > span { width: 100%; line-height: 1.6; }
+  .schedule-page .popup-actions { gap: 8px; }
+  .schedule-page .popup-actions button { flex: 1; padding-inline: 12px; }
+}

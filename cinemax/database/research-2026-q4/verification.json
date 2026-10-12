@@ -1,0 +1,21 @@
+{
+    "date": "2026-10-12",
+    "imported": 13,
+    "october": 10,
+    "poster_files_valid": 20,
+    "official_trailers_verified": 20,
+    "pending": 7,
+    "preserved_old_movies": 8,
+    "checks": [
+        "database_fields",
+        "genres",
+        "duplicates",
+        "statuses",
+        "user_model_filters",
+        "movie_details",
+        "admin_model_list",
+        "poster_dimensions_and_hashes",
+        "old_movies_genres_links_images",
+        "unrelated_table_counts"
+    ]
+}

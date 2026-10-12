@@ -1,0 +1,16 @@
+{
+  "passed": 11,
+  "checks": [
+    "Left singleton blocks continue and identifies A1",
+    "Selecting the isolated seat restores continue",
+    "Removing a seat updates the singleton warning",
+    "Right singleton blocks continue and identifies A12",
+    "Selecting the final pair is allowed",
+    "A single selected ticket with at least two empty seats each side is allowed",
+    "Singleton between selected groups is blocked",
+    "Filling the gap between groups clears the warning",
+    "Forged POST cannot bypass the server rule",
+    "Valid selection reaches food selection with a hold",
+    "Seat gap selection has no JavaScript errors"
+  ]
+}

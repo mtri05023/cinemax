@@ -1,0 +1,67 @@
+[
+    {
+        "movie_id": 34,
+        "title": "Quyết Cua Anh Này",
+        "status": 2
+    },
+    {
+        "movie_id": 35,
+        "title": "Scotty Giải Cứu Hoàng Thượng",
+        "status": 2
+    },
+    {
+        "movie_id": 36,
+        "title": "Thần Sư Chung Quỳ: Linh Giới Đại Chiến",
+        "status": 2
+    },
+    {
+        "movie_id": 37,
+        "title": "Trái Tim Quái Thú",
+        "status": 2
+    },
+    {
+        "movie_id": 38,
+        "title": "Blue Lock: Cuộc Chiến Của Những Tiền Đạo",
+        "status": 2
+    },
+    {
+        "movie_id": 39,
+        "title": "Người Mẹ Khác",
+        "status": 2
+    },
+    {
+        "movie_id": 40,
+        "title": "Án Mạng Xém Hoàn Hảo",
+        "status": 2
+    },
+    {
+        "movie_id": 41,
+        "title": "Quỷ Ăn Tạng 4: Hổ Tinh",
+        "status": 1
+    },
+    {
+        "movie_id": 42,
+        "title": "Shaun the Sheep: Quái Lạ Ghé Nhà",
+        "status": 1
+    },
+    {
+        "movie_id": 43,
+        "title": "Án Mạng Karaoke",
+        "status": 1
+    },
+    {
+        "movie_id": 44,
+        "title": "Godzilla Trừ Không",
+        "status": 1
+    },
+    {
+        "movie_id": 45,
+        "title": "Ngày Con Còn Mẹ",
+        "status": 1
+    },
+    {
+        "movie_id": 46,
+        "title": "Gặp Gỡ Thông Gia: Dâu Mới Trình Làng",
+        "status": 1
+    }
+]

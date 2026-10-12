@@ -1,0 +1,17 @@
+{
+  "passed": 12,
+  "checks": [
+    "Cinema with no active rooms cannot start schedule creation",
+    "Week form selects only a room in the current cinema",
+    "Switching to an empty cinema clears stale room and closes add form",
+    "Week calendar offers no add cells when there are no rooms",
+    "Calling the add handler directly cannot open an empty-cinema form",
+    "Forged cross-cinema hall is rejected by server",
+    "Valid room can create a schedule through the week form",
+    "Dismissing deletion confirmation keeps the schedule",
+    "GET cannot delete a schedule",
+    "Invalid CSRF cannot delete a schedule",
+    "Confirmed deletion removes unused schedule and its tickets",
+    "Schedule create/delete UI has no JavaScript errors"
+  ]
+}

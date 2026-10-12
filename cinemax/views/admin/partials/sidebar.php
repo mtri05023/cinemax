@@ -1,0 +1,215 @@
+<?php
+function isActivePage($contentPath, $pageName)
+{
+    return basename($contentPath, '.php') === $pageName ? 'active' : '';
+}
+
+require_once __DIR__ . '/../../../services/AuthMiddleware.php';
+$authUser = AuthMiddleware::getAuthUser();
+$isLoggedIn = ($authUser !== null);
+
+?>
+
+<aside class="admin-sidebar" id="adminSidebar" aria-label="Menu quản trị">
+    <button type="button" class="admin-menu-close" id="adminMenuClose" aria-label="Đóng menu quản trị">×</button>
+    <div class="sidebar-header">
+        <div class="logo">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8a4 4 0 0 1 0 8v4a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4a4 4 0 0 1 0-8"></path>
+                <path d="M10 8V4a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v4"></path>
+                <path d="M6 8v-2a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v2"></path>
+                <path d="M18 8v-2a2 2 0 0 0-2-2h0a2 2 0 0 0-2 2v2"></path>
+                <line x1="12" y1="14" x2="12" y2="22"></line>
+                <line x1="8" y1="15" x2="9" y2="22"></line>
+                <line x1="16" y1="15" x2="15" y2="22"></line>
+            </svg>
+            <span>Cinemax</span>
+        </div>
+    </div>
+
+    <nav class="sidebar-nav">
+        <?php if ($isLoggedIn): ?>
+            <div class="nav-item" style="font-size: 18px; text-transform: uppercase; border-bottom: 1px solid #404040; padding-bottom: 15px; margin-bottom: 15px;">
+                <i class="far fa-user"></i>
+                <span><?php echo htmlspecialchars($authUser['full_name']); ?></span>
+            </div>
+        <?php endif; ?>
+
+        <?php if (hasPermission('dashboard_view')): ?>
+            <a href="index.php?page=dashboard" class="nav-item <?php echo isActivePage($contentPath, 'dashboard'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Thống kê</span>
+            </a>
+        <?php endif; ?>
+
+        <div style="color: #666; font-size: 11px; font-weight: bold; padding: 15px 20px 5px; text-transform: uppercase; letter-spacing: 1px;">Quản lý Phim</div>
+
+        <?php if (hasModule('movie')): ?>
+            <a href="index.php?page=movies" class="nav-item <?php echo isActivePage($contentPath, 'movies'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                    <polyline points="17 2 12 7 7 2"></polyline>
+                </svg>
+                <span>Danh sách Phim</span>
+            </a>
+        <?php endif; ?>
+
+        <?php if (hasModule('genres')): ?>
+            <a href="index.php?page=genres" class="nav-item <?php echo isActivePage($contentPath, 'genres'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                </svg>
+                <span>Thể loại Phim</span>
+            </a>
+        <?php endif; ?>
+
+        <div style="color: #666; font-size: 11px; font-weight: bold; padding: 15px 20px 5px; text-transform: uppercase; letter-spacing: 1px;">Hệ thống Rạp</div>
+
+        <?php if (hasModule('cinema')): ?>
+            <a href="index.php?page=cinemas" class="nav-item <?php echo isActivePage($contentPath, 'cinemas'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Rạp chiếu</span>
+            </a>
+        <?php endif; ?>
+
+        <?php if (hasModule('hall')): ?>
+            <a href="index.php?page=halls" class="nav-item <?php echo isActivePage($contentPath, 'halls'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span>Phòng chiếu</span>
+            </a>
+        <?php endif; ?>
+
+        <?php if (hasModule('seat_types')): ?>
+            <a href="index.php?page=seat_types" class="nav-item <?php echo isActivePage($contentPath, 'seat_types'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 21h10"></path>
+                    <rect x="4" y="3" width="16" height="14" rx="2" ry="2"></rect>
+                </svg>
+                <span>Loại ghế & Giá</span>
+            </a>
+        <?php endif; ?>
+
+        <div style="color: #666; font-size: 11px; font-weight: bold; padding: 15px 20px 5px; text-transform: uppercase; letter-spacing: 1px;">Kinh doanh</div>
+
+        <?php if (hasModule('shows')): ?>
+            <a href="index.php?page=shows" class="nav-item <?php echo isActivePage($contentPath, 'shows'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Lịch chiếu</span>
+            </a>
+        <?php endif; ?>
+
+        <?php if (hasModule('bookings')): ?>
+            <a href="index.php?page=bookings" class="nav-item <?php echo isActivePage($contentPath, 'bookings'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>Đơn đặt vé</span>
+            </a>
+        <?php endif; ?>
+
+        <?php if (hasModule('combos')): ?>
+            <a href="index.php?page=combos" class="nav-item <?php echo isActivePage($contentPath, 'combos'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                </svg>
+                <span>Đồ ăn & Combo</span>
+            </a>
+        <?php endif; ?>
+
+        <?php if (hasModule('promotions')): ?>
+            <a href="index.php?page=promotions" class="nav-item <?php echo isActivePage($contentPath, 'promotions'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span>Khuyến mãi</span>
+            </a>
+        <?php endif; ?>
+
+        <div style="color: #666; font-size: 11px; font-weight: bold; padding: 15px 20px 5px; text-transform: uppercase; letter-spacing: 1px;">Hệ thống</div>
+
+        <?php if (hasModule('roles')): ?>
+            <a href="index.php?page=roles" class="nav-item <?php echo isActivePage($contentPath, 'roles'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="12" r="3"></circle>
+                    <path d="M12 12h8"></path>
+                    <path d="M18 12v-2"></path>
+                    <path d="M20 12v-1.5"></path>
+                </svg>
+                <span>Vai trò</span>
+            </a>
+        <?php endif; ?>
+
+        <?php if (hasModule('permissions')): ?>
+            <a href="index.php?page=permissions" class="nav-item <?php echo isActivePage($contentPath, 'permissions'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2l7 4v6c0 5-3.5 9.5-7 10-3.5-.5-7-5-7-10V6l7-4z"></path>
+                    <path d="M9 12l2 2 4-4"></path>
+                </svg>
+                <span>Quyền</span>
+            </a>
+        <?php endif; ?>
+
+        <?php if (hasModule('users')): ?>
+            <a href="index.php?page=users" class="nav-item <?php echo isActivePage($contentPath, 'users'); ?>">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <span>Người dùng</span>
+            </a>
+        <?php endif; ?>
+    </nav>
+
+    <div class="sidebar-footer">
+        <?php if ($authUser['role_id'] != 1): ?>
+        <a href="../user/index.php" class="nav-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                <polyline points="10 17 15 12 10 7"></polyline>
+                <line x1="15" y1="12" x2="3" y2="12"></line>
+            </svg>
+            <span>Về trang người dùng</span>
+        </a>
+        <?php endif; ?>
+        
+        <a href="../../public/index.php?action=logout" class="nav-item" onclick="return confirm('Đăng xuất khỏi hệ thống?');">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+            <span>Đăng xuất</span>
+        </a>
+    </div>
+</aside>

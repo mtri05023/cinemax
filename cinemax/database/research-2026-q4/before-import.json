@@ -1,0 +1,240 @@
+{
+    "captured_at": "2026-10-12T12:42:12+02:00",
+    "movies": [
+        {
+            "movie_id": "1",
+            "title": "Avengers: Endgame",
+            "director": "",
+            "actors": null,
+            "description": "Siêu anh hùng Marvel",
+            "duration_min": "180",
+            "release_date": "2019-04-26",
+            "poster_url": "assets\/uploads\/movies\/avengers-endgame.jpg",
+            "trailer_url": null,
+            "status": "2",
+            "created_at": "2024-01-01 00:00:00"
+        },
+        {
+            "movie_id": "2",
+            "title": "Your Name",
+            "director": "",
+            "actors": null,
+            "description": "Anime tình cảm",
+            "duration_min": "110",
+            "release_date": "2016-08-26",
+            "poster_url": "assets\/uploads\/movies\/your-name.jpg",
+            "trailer_url": null,
+            "status": "2",
+            "created_at": "2024-02-01 00:00:00"
+        },
+        {
+            "movie_id": "3",
+            "title": "Inception",
+            "director": "",
+            "actors": null,
+            "description": "Hành động, khoa học viễn tưởng",
+            "duration_min": "148",
+            "release_date": "2010-07-16",
+            "poster_url": "assets\/uploads\/movies\/inception.jpg",
+            "trailer_url": null,
+            "status": "0",
+            "created_at": "2024-03-01 00:00:00"
+        },
+        {
+            "movie_id": "29",
+            "title": "AVATA 3 (LỬA VÀ TRO TÀN)",
+            "director": "James Cameron",
+            "actors": "Sam Worthington, Zoe Saldaña",
+            "description": "Sau cuộc chiến tàn khốc với RDA và nỗi mất mát lớn, gia đình Sully tiếp tục đối mặt với những hiểm họa mới trên Pandora.",
+            "duration_min": "195",
+            "release_date": "2026-03-01",
+            "poster_url": "assets\/uploads\/movies\/avatar-fire-and-ash.jpg",
+            "trailer_url": "https:\/\/youtu.be\/GatNL0mmQGc?si=QbhgLzJ2PfR8YEbp",
+            "status": "2",
+            "created_at": "2026-03-23 10:48:27"
+        },
+        {
+            "movie_id": "30",
+            "title": "Avatar: The Way of Water",
+            "director": "James Cameron",
+            "actors": "Sam Worthington, Zoe Saldaña, Sigourney Weaver, Stephen Lang",
+            "description": "Lấy bối cảnh hơn 10 năm sau phần đầu, phim kể về gia đình Jake Sully và những thử thách họ phải đối mặt để bảo vệ nhau.",
+            "duration_min": "192",
+            "release_date": "2026-03-15",
+            "poster_url": "assets\/uploads\/movies\/avatar-way-of-water.jpg",
+            "trailer_url": "https:\/\/www.youtube.com\/watch?v=d9MyW72ELq0",
+            "status": "2",
+            "created_at": "2026-03-23 10:56:42"
+        },
+        {
+            "movie_id": "31",
+            "title": "Đêm Ngày Xa Mẹ",
+            "director": "Trấn Thành",
+            "actors": "Hari Won",
+            "description": "Bộ phim xoay quanh câu chuyện gia đình và tình cảm mẹ con với nhiều cảm xúc sâu lắng.",
+            "duration_min": "100",
+            "release_date": "2026-10-15",
+            "poster_url": "assets\/uploads\/movies\/dem-ngay-xa-me.jpg",
+            "trailer_url": "https:\/\/www.youtube.com\/watch?v=_3gQeYHoGhE",
+            "status": "1",
+            "created_at": "2026-03-23 11:31:48"
+        },
+        {
+            "movie_id": "32",
+            "title": "Quỷ Nhập Tràng 2",
+            "director": "Trấn Thành",
+            "actors": "Hari Won",
+            "description": "Tiếp nối phần trước, bộ phim khai thác những hiện tượng kỳ bí và yếu tố kinh dị tâm linh.",
+            "duration_min": "95",
+            "release_date": "2026-03-18",
+            "poster_url": "assets\/uploads\/movies\/quy-nhap-trang-2.jpg",
+            "trailer_url": "https:\/\/www.youtube.com\/watch?v=VCI9XTxlQxk",
+            "status": "2",
+            "created_at": "2026-03-23 11:44:16"
+        },
+        {
+            "movie_id": "33",
+            "title": "Tee Yod: Quỷ Ăn Tạng Phần 3",
+            "director": "Narit Yuvaboon",
+            "actors": "Nadech Kugimiya, Denise Jelilcha Kapaun, Mim Rattawadee Wongthong, Junior Kajbhunditt Jaidee",
+            "description": "Yak cùng gia đình đối mặt với hiểm họa mới khi cô em út Yee bất ngờ mất tích. Để giải cứu em gái, Yak và những người thân phải tiến vào khu rừng ma ám Bong Sa Noh Bian, nơi ẩn chứa những linh hồn tà ác và bí mật kinh hoàng.",
+            "duration_min": "104",
+            "release_date": "2026-10-09",
+            "poster_url": "assets\/uploads\/movies\/movie_1791800149_7394.jpg",
+            "trailer_url": "https:\/\/youtu.be\/Wm0AXRUqNBE?si=fuV2tk63dU0PfI3m",
+            "status": "2",
+            "created_at": "2026-10-12 17:15:49"
+        }
+    ],
+    "genres": [
+        {
+            "genre_id": "1",
+            "name": "Hành động",
+            "status": "1"
+        },
+        {
+            "genre_id": "2",
+            "name": "Tình cảm",
+            "status": "1"
+        },
+        {
+            "genre_id": "3",
+            "name": "Kinh dị",
+            "status": "1"
+        },
+        {
+            "genre_id": "4",
+            "name": "Kịch Hài",
+            "status": "1"
+        },
+        {
+            "genre_id": "6",
+            "name": "Phim Hài",
+            "status": "1"
+        },
+        {
+            "genre_id": "7",
+            "name": "Viễn Tưởng Khoa Học",
+            "status": "1"
+        },
+        {
+            "genre_id": "8",
+            "name": "Bom Tấn",
+            "status": "1"
+        }
+    ],
+    "movie_genres": [
+        {
+            "movie_id": "1",
+            "genre_id": "1"
+        },
+        {
+            "movie_id": "2",
+            "genre_id": "2"
+        },
+        {
+            "movie_id": "3",
+            "genre_id": "1"
+        },
+        {
+            "movie_id": "29",
+            "genre_id": "1"
+        },
+        {
+            "movie_id": "30",
+            "genre_id": "2"
+        },
+        {
+            "movie_id": "31",
+            "genre_id": "3"
+        },
+        {
+            "movie_id": "32",
+            "genre_id": "2"
+        },
+        {
+            "movie_id": "33",
+            "genre_id": "2"
+        },
+        {
+            "movie_id": "33",
+            "genre_id": "3"
+        }
+    ],
+    "movie_images": [
+        {
+            "image_id": "1",
+            "movie_id": "1",
+            "image_url": "assets\/uploads\/movies\/avengers-endgame.jpg",
+            "is_poster": "1",
+            "status": "1"
+        },
+        {
+            "image_id": "2",
+            "movie_id": "2",
+            "image_url": "assets\/uploads\/movies\/your-name.jpg",
+            "is_poster": "1",
+            "status": "1"
+        },
+        {
+            "image_id": "3",
+            "movie_id": "3",
+            "image_url": "assets\/uploads\/movies\/inception.jpg",
+            "is_poster": "1",
+            "status": "1"
+        },
+        {
+            "image_id": "4",
+            "movie_id": "29",
+            "image_url": "assets\/uploads\/movies\/avatar-fire-and-ash.jpg",
+            "is_poster": "1",
+            "status": "1"
+        },
+        {
+            "image_id": "5",
+            "movie_id": "30",
+            "image_url": "assets\/uploads\/movies\/avatar-way-of-water.jpg",
+            "is_poster": "1",
+            "status": "1"
+        },
+        {
+            "image_id": "6",
+            "movie_id": "31",
+            "image_url": "assets\/uploads\/movies\/dem-ngay-xa-me.jpg",
+            "is_poster": "1",
+            "status": "1"
+        },
+        {
+            "image_id": "7",
+            "movie_id": "32",
+            "image_url": "assets\/uploads\/movies\/quy-nhap-trang-2.jpg",
+            "is_poster": "1",
+            "status": "1"
+        }
+    ],
+    "counts": {
+        "shows": 9,
+        "tickets": 530,
+        "bills": 6
+    }
+}

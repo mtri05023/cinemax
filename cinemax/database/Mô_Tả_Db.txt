@@ -1,0 +1,173 @@
+==========================Nhóm bảng Người dùng & Phân quyền===============================
+2.1. Bảng users
+    Lưu thông tin người dùng hệ thống (khách hàng, nhân viên, quản trị viên)
+    Mỗi người dùng có thể có nhiều vai trò
+    Quan hệ:
+    users —< user_role
+    users —< bills
+
+2.2. Bảng roles
+    Lưu các vai trò trong hệ thống
+    Ví dụ: ADMIN, MANAGER, STAFF, CUSTOMER
+    Quan hệ:
+    roles —< users
+    roles —< role_permission
+
+2.3. Bảng permissions
+    Lưu các quyền chức năng chi tiết trong hệ thống
+    Ví dụ: MOVIE_CREATE, SHOW_MANAGE, TICKET_SELL
+    Quan hệ:
+    permissions —< role_permission
+
+2.5. Bảng role_permission
+    Bảng trung gian nhiều–nhiều giữa roles và permissions
+    Cho phép phân quyền linh động theo vai trò
+
+==========================Nhóm bảng Khu vực & Rạp chiếu============================
+3.1. Bảng locations
+    Lưu thông tin khu vực / thành phố nơi rạp tọa lạc
+    Quan hệ:
+    locations —< cinemas
+
+3.2. Bảng cinema_status
+    Danh mục trạng thái của rạp
+    Ví dụ: Hoạt động, Tạm ngưng
+    Quan hệ:
+    cinema_status —< cinemas
+
+3.3. Bảng cinemas
+    Lưu thông tin rạp chiếu phim
+    Mỗi rạp thuộc một khu vực và có một trạng thái
+    Quan hệ:
+    cinemas >— locations
+    cinemas >— cinema_status
+    cinemas —< halls
+
+====================================Nhóm bảng Phòng chiếu & Ghế==================================
+4.1. Bảng hall_status
+    Danh mục trạng thái phòng chiếu
+    Ví dụ: Hoạt động, Bảo trì
+
+4.2. Bảng halls
+    Lưu thông tin phòng chiếu
+    Mỗi phòng thuộc một rạp
+    Quan hệ:
+    halls >— cinemas
+    halls >— hall_status
+    halls —< seats
+    halls —< shows
+
+4.3. Bảng seat_type
+    Danh mục loại ghế
+    Ví dụ: Thường, VIP, Sweetbox
+
+4.4. Bảng seats
+    Lưu thông tin ghế trong phòng chiếu
+    Mỗi ghế thuộc một phòng và một loại ghế
+    Mỗi ghế được xác định duy nhất bởi (HallID, RowName, SeatNumber)
+    Quan hệ:
+    seats >— halls
+    seats >— seat_type
+    seats —< tickets
+
+=====================================Nhóm bảng Phim=========================================
+5.1. Bảng movie_status
+    Danh mục trạng thái phim
+    Ví dụ: Đang chiếu, Sắp chiếu, Ngừng chiếu
+
+5.2. Bảng movies
+    Lưu thông tin phim
+    Là bảng trung tâm của nghiệp vụ chiếu phim
+    Quan hệ:
+    movies >— movie_status
+    movies —< movie_genre
+    movies —< movie_format
+    movies —< images
+    movies —< shows
+
+5.3. Bảng genres
+    Danh mục thể loại phim
+    
+5.4. Bảng movie_genre
+    Bảng trung gian nhiều–nhiều giữa phim và thể loại
+    Một phim có thể thuộc nhiều thể loại
+
+5.5. Bảng formats
+    Danh mục định dạng chiếu
+    Ví dụ: 2D, 3D, IMAX
+
+5.6. Bảng movie_format
+    Bảng trung gian nhiều–nhiều giữa phim và định dạng chiếu
+
+5.7. Bảng images
+    Lưu hình ảnh của phim (poster, banner, hình quảng bá)
+    Quan hệ:
+    images >— movies
+
+=======================================Nhóm bảng Suất chiếu===============================
+6.1. Bảng shows
+    Lưu thông tin suất chiếu
+    Liên kết giữa:
+        Phim
+        Phòng chiếu
+        Định dạng
+        Thời gian chiếu
+    Quan hệ:
+    shows >— movies
+    shows >— halls
+    shows >— formats
+    shows —< tickets
+
+==========================================Nhóm bảng Đặt vé & Thanh toán==========================================
+7.1. Bảng bill_status
+    Danh mục trạng thái hóa đơn
+    Ví dụ: Chưa thanh toán, Đã thanh toán, Hủy
+
+7.2. Bảng bills
+    Lưu thông tin hóa đơn thanh toán
+    Mỗi hóa đơn thuộc về một người dùng
+    Quan hệ:
+    bills >— users
+    bills >— bill_status
+    bills —< tickets
+
+7.3. Bảng tickets
+    Lưu thông tin vé xem phim
+    Mỗi vé gắn với:
+        Một suất chiếu
+        Một ghế
+        Một hóa đơn
+    Ràng buộc:
+        Một ghế chỉ được đặt một lần cho mỗi suất chiếu
+    Quan hệ:
+    tickets >— bills
+    tickets >— shows
+    tickets >— seats
+
+7.4 Bảng combos
+    Lưu thông tin các combo đồ ăn – thức uống bán kèm khi đặt vé xem phim.
+    Mỗi combo có giá cố định tại thời điểm niêm yết.
+    Combo có thể được bật / tắt bán mà không cần xóa dữ liệu.
+    Quan hệ:
+    combos —< bill_combo
+
+7.5 Bảng bill_combo
+    Bảng trung gian giữa hóa đơn và combo đồ ăn – thức uống.
+    Lưu thông tin các combo được mua trong từng hóa đơn.
+    Mỗi hóa đơn có thể mua nhiều combo.
+    Một combo có thể xuất hiện trong nhiều hóa đơn.
+    Quan hệ:
+    bill_combo >— bills
+    bill_combo >— combos
+
+7.6 Bảng promotions
+    Lưu thông tin các chương trình khuyến mãi áp dụng trong hệ thống.
+    Khuyến mãi có thể áp dụng cho hóa đơn (giảm giá tổng tiền vé và/hoặc combo).
+    Mỗi khuyến mãi có:
+        Mã khuyến mãi
+        Loại giảm giá (theo phần trăm)
+        Giá trị giảm
+        Thời gian áp dụng
+        Trạng thái hoạt động
+    Quan hệ:
+    promotions —< bills
