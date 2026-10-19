@@ -56,6 +56,7 @@ $movieTitle = !empty($movie['title']) ? (string)$movie['title'] : 'Lịch chiế
 <section class="showtimes">
 
 
+    <?php if ($movie): ?>
     <div class="movie-header-bg">
         <div class="container">
             <div class="movie-header-content">
@@ -86,6 +87,7 @@ $movieTitle = !empty($movie['title']) ? (string)$movie['title'] : 'Lịch chiế
         </div>
     </div>
 
+    <?php endif; ?>
     <main class="section">
         <div class="container" id="showtimesContent">
             <div style="text-align: center; padding: 40px; color: #888;">
@@ -97,4 +99,4 @@ $movieTitle = !empty($movie['title']) ? (string)$movie['title'] : 'Lịch chiế
 </section>
 
 <script src="/cinemax/cinemax/public/assets/js/api.js"></script>
-<script src="/cinemax/cinemax/public/assets/js/user-showtimes.js?v=20260611-6"></script>
+<script src="/cinemax/cinemax/public/assets/js/user-showtimes.js?v=20261019-2"></script>

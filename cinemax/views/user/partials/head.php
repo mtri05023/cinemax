@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="../../public/assets/css/footer.css">
 <link rel="stylesheet" href="../../public/assets/css/home.css?v=20260611-8">
 <link rel="stylesheet" href="../../public/assets/css/movie_detail.css">
-<link rel="stylesheet" href="../../public/assets/css/showtime.css?v=20260611-2">
+<link rel="stylesheet" href="../../public/assets/css/showtime.css?v=20261019-2">
 <link rel="stylesheet" href="../../public/assets/css/theater.css">
 <link rel="stylesheet" href="../../public/assets/css/booking_success.css">
 <link rel="stylesheet" href="../../public/assets/css/button.css">

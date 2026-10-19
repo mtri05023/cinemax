@@ -105,6 +105,62 @@
   color: #ccc;
 }
 
+.showtimes .date-group {
+  margin-bottom: 36px;
+}
+.showtimes .date-label {
+  color: var(--primary-color, #e50914);
+  margin-bottom: 20px;
+}
+.showtimes .theater-group {
+  margin-bottom: 24px;
+}
+.schedule-movie {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  margin-bottom: 16px;
+  background: var(--bg-secondary, #191919);
+  border: 1px solid #333;
+  border-radius: 12px;
+}
+.schedule-poster-link {
+  flex: 0 0 140px;
+}
+.schedule-poster {
+  display: block;
+  width: 140px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #111;
+}
+.schedule-movie-info {
+  flex: 1;
+  min-width: 0;
+}
+.schedule-movie-info h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+.schedule-movie-info h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+.schedule-movie-info h3 a:hover {
+  color: var(--primary-color, #e50914);
+}
+.schedule-duration {
+  color: #aaa;
+  margin: 0 0 20px;
+}
+@media (max-width: 480px) {
+  .schedule-movie { gap: 14px; padding: 14px; }
+  .schedule-poster-link { flex-basis: 90px; }
+  .schedule-poster { width: 90px; }
+  .schedule-movie-info h3 { font-size: 17px; }
+  .schedule-movie .time-btn { padding: 10px 14px; }
+}
 @media (max-width: 768px) {
   .movie-header-content {
     flex-direction: column;

@@ -35,19 +35,12 @@ async function loadAllData() {
             movie_id: currentMovieId || ""
         };
 
-        if (!currentMovieId) {
-            showFilters.show_date = getTodayIsoDate();
-        }
-
-        // Load cinemas và halls
-        const [allCinemas, halls, userShows] = await Promise.all([
+        const [allCinemas, userShows] = await Promise.all([
             getAllCinemas(),
-            currentCinemaId ? getAllHalls(currentCinemaId) : Promise.resolve([]),
             getUserShows(showFilters)
         ]);
         // Chỉ giữ rạp đang hoạt động cho user
         cinemasData = allCinemas.filter(cinema => String(cinema.Status) === '1');
-        hallsData = halls.filter(hall => String(hall.status ?? hall.Status ?? 0) === '1');
         showsData = userShows || [];
         updateMovieHeader();
     } catch (error) {
@@ -68,6 +61,7 @@ function normalizePosterUrl(rawUrl) {
 }
 
 function updateMovieHeader() {
+    if (!currentMovieId) return;
     const titleEl = document.getElementById('showtimesMovieTitle');
     const posterEl = document.getElementById('showtimesPoster');
     const durationEl = document.getElementById('showtimesDuration');
@@ -119,21 +113,13 @@ function renderShowtimes() {
     const container = document.getElementById('showtimesContent');
     if (!container) return;
 
-    if (currentMovieId) {
-        renderShowtimesByMovie();
-        return;
-    }
-    
-    // Nếu có cinema_id, hiển thị theo rạp
-    if (currentCinemaId) {
-        const cinema = cinemasData.find(c => c.CinemaID == currentCinemaId);
-        if (cinema) {
-            renderShowtimesByCinema(cinema, hallsData);
-        }
-    } else {
-        // Hiển thị tất cả rạp
-        renderAllCinemas();
-    }
+    renderShowtimesByMovie();
+}
+
+function escapeShowtimeHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g, character => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    })[character]);
 }
 
 function renderShowtimesByMovie() {
@@ -143,7 +129,7 @@ function renderShowtimesByMovie() {
     if (!showsData.length) {
         container.innerHTML = `
             <div style="text-align: center; padding: 40px; border: 1px dashed #444; border-radius: 8px; color: #aaa;">
-                Hiện chưa có lịch chiếu trong hôm nay
+                Hiện chưa có lịch chiếu sắp tới
             </div>
         `;
         return;
@@ -152,7 +138,7 @@ function renderShowtimesByMovie() {
     const grouped = {};
     showsData.forEach(show => {
         const date = show.show_date ?? show.ShowDate ?? '';
-        const cinemaName = show.cinema_name ?? show.CinemaName ?? 'Rạp';
+        const cinemaName = show.cinema_id ?? show.CinemaID ?? show.cinema_name ?? 'Rạp';
         if (!grouped[date]) grouped[date] = {};
         if (!grouped[date][cinemaName]) grouped[date][cinemaName] = [];
         grouped[date][cinemaName].push(show);
@@ -168,11 +154,32 @@ function renderShowtimesByMovie() {
         Object.keys(grouped[date]).sort().forEach(cinemaName => {
             html += `
                 <div class="theater-group">
-                    <div class="theater-name">${cinemaName}</div>
-                    <div class="time-list">
+                    <div class="theater-name">${escapeShowtimeHtml(grouped[date][cinemaName][0].cinema_name ?? grouped[date][cinemaName][0].CinemaName ?? 'Rạp')}</div>
             `;
 
+            const movieGroups = new Map();
             grouped[date][cinemaName].forEach(show => {
+                const movieKey = String(show.movie_id ?? show.MovieID ?? show.movie_title ?? '');
+                if (!movieGroups.has(movieKey)) movieGroups.set(movieKey, []);
+                movieGroups.get(movieKey).push(show);
+            });
+            movieGroups.forEach(movieShows => {
+                const movie = movieShows[0];
+                const title = escapeShowtimeHtml(movie.movie_title ?? movie.MovieTitle ?? '');
+                const movieId = encodeURIComponent(movie.movie_id ?? movie.MovieID ?? '');
+                const poster = escapeShowtimeHtml(normalizePosterUrl(movie.movie_poster_url ?? movie.poster_url ?? ''));
+                const duration = Number(movie.movie_duration_min ?? movie.duration_min ?? 0);
+                html += `
+                    <article class="schedule-movie">
+                        <a href="index.php?page=movie_detail&id=${movieId}" class="schedule-poster-link">
+                            <img class="schedule-poster" src="${poster}" alt="Poster ${title}" loading="lazy">
+                        </a>
+                        <div class="schedule-movie-info">
+                            <h3><a href="index.php?page=movie_detail&id=${movieId}">${title}</a></h3>
+                            ${duration > 0 ? `<p class="schedule-duration">${duration} phút</p>` : ''}
+                            <div class="time-list">
+                `;
+                movieShows.forEach(show => {
                 const showId = show.show_id ?? show.ShowID ?? '';
                 const hallId = show.hall_id ?? show.HallID ?? '';
                 const hallName = show.hall_name ?? show.HallName ?? 'Phòng';
@@ -180,21 +187,29 @@ function renderShowtimesByMovie() {
                 const price = Number(show.base_price ?? show.BasePrice ?? 0).toLocaleString('vi-VN');
 
                 html += `
-                    <a href="index.php?page=seat_selection&show_id=${showId}&hall_id=${hallId}" class="time-btn">
-                        <div>${hallName}</div>
-                        ${startTime}<br>
+                    <a href="index.php?page=seat_selection&show_id=${encodeURIComponent(showId)}&hall_id=${encodeURIComponent(hallId)}" class="time-btn">
+                        <div>${escapeShowtimeHtml(hallName)}</div>
+                        ${escapeShowtimeHtml(startTime)}<br>
                         <small>${price} ₫</small>
                     </a>
                 `;
+                });
+                html += '</div></div></article>';
             });
 
-            html += '</div></div>';
+            html += '</div>';
         });
 
         html += '</div>';
     });
 
     container.innerHTML = html;
+    container.querySelectorAll('.schedule-poster').forEach(poster => {
+        poster.onerror = () => {
+            poster.onerror = null;
+            poster.src = defaultPosterSvg;
+        };
+    });
 }
 
 /**

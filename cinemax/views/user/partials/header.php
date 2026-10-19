@@ -23,6 +23,7 @@ $isLoggedIn = ($authUser !== null);
             <div class="nav-links">
                 <a href="index.php">Trang chủ</a>
                 <a href="index.php?page=movies">Phim</a>
+                <a href="index.php?page=showtimes">Lịch chiếu</a>
                 <a href="index.php?page=theaters">Rạp chiếu</a>
                 <a href="index.php?page=promotions">Khuyến mãi</a>
             </div>
